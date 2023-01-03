@@ -2,49 +2,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#E2CEFF"
-    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img4"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:hint="Username" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="382dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="247dp"
+        android:fontFamily="@font/raleway_medium"
+        android:textAlignment="center"
+        android:text="Welcome To"
+        android:textColor="@color/black"
+        android:textSize="45sp" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/username"
-        android:layout_marginTop="50dp"
-        android:hint="Password" />
-
-    <EditText
-        android:id="@+id/repassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
-        android:layout_marginTop="50dp"
-        android:hint="Confirm Password" />
-
-    <Button
-        android:id="@+id/btnSignup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/repassword"
-        android:layout_marginTop="50dp"
-        android:text="Register" />
+    <TextView
+        android:id="@+id/for_living_"
+        android:layout_width="382dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="448dp"
+        android:fontFamily="@font/work_sans_medium"
+        android:gravity="top"
+        android:text="For living happier and healthier everyday"
+        android:textSize="22sp" />
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSignup"
-        android:layout_marginTop="50dp"
-        android:text="Login" />
+        android:id="@+id/BTNStart"
+        android:layout_width="176dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="521dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="start"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="166dp"
+        android:layout_height="59dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="129dp"
+        android:layout_marginTop="284dp"
+        android:fontFamily="@font/bad_script"
+        android:text="EUNOIA"
+        android:textSize="45sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="209dp"
+        android:layout_height="242dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="66dp"
+        android:src="@drawable/eunoiaicon" />
 
 </RelativeLayout>

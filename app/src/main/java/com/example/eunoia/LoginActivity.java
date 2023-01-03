@@ -20,9 +20,9 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        username = (EditText) findViewById(R.id.username1);
-        password = (EditText) findViewById(R.id.password1);
-        btnLogin = (Button) findViewById(R.id.btnLogin1);
+        username = (EditText) findViewById(R.id.ETUsername);
+        password = (EditText) findViewById(R.id.ETPassword);
+        btnLogin = (Button) findViewById(R.id.BTNLogin);
         DB = new DBHelper(this);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
