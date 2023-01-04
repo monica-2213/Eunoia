@@ -1,22 +1,22 @@
 package com.example.eunoia;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.CollapsibleActionView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
+    public FragmentManager fragmentManager;
     EditText username, password, repassword;
     Button signUp, login;
     DBHelper DB;
@@ -114,23 +114,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-            ans1.setBackgroundColor(Color.WHITE);
-            ans2.setBackgroundColor(Color.WHITE);
-            ans3.setBackgroundColor(Color.WHITE);
+        ans1.setBackgroundColor(Color.WHITE);
+        ans2.setBackgroundColor(Color.WHITE);
+        ans3.setBackgroundColor(Color.WHITE);
 
 
-            Button clickedButton = (Button) view;
-            if(clickedButton.getId()==R.id.SubmitBtn){
-                if (selectedAnswer.equals(QuestionsAnswer.correctAnswers[currentQuestionIndex])){
-                    score++;
-                }
-                currentQuestionIndex++;
-                loadNewQuestion();
-            }else{
-                 //choices button clicked
-                 selectedAnswer= clickedButton.getText().toString();
-                 clickedButton.setBackgroundColor(Color.MAGENTA);
-             }
+        Button clickedButton = (Button) view;
+        if(clickedButton.getId()==R.id.SubmitBtn){
+            if (selectedAnswer.equals(QuestionsAnswer.correctAnswers[currentQuestionIndex])){
+                score++;
+            }
+            currentQuestionIndex++;
+            loadNewQuestion();
+        }else{
+            //choices button clicked
+            selectedAnswer= clickedButton.getText().toString();
+            clickedButton.setBackgroundColor(Color.MAGENTA);
+        }
     }
 
     void loadNewQuestion(){
@@ -169,4 +169,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //trial 2/1/23
     //jaskskbask
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        String username = "Hayato";
+        fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        Bundle bundle = new Bundle();
+        bundle.putString("username",username);
+        TrackerMenu trackerMenu = new TrackerMenu();
+        trackerMenu.setArguments(bundle);
+        fragmentTransaction.replace(R.id.frameLayout,trackerMenu).commit();
+    }
+
 }
+
+
+
