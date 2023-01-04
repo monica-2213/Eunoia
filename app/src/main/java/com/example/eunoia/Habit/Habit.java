@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.Navigation;
+
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +18,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.tracker.Mood.NewMood;
-import com.example.tracker.R;
+import com.example.eunoia.Mode.NewMood;
+import com.example.eunoia.R;
 
 import java.util.ArrayList;
 
