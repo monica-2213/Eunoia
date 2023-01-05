@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:paddingTop="15dp">
+    android:paddingTop="15dp"
+    android:background="@drawable/img4"
+    tools:context=".MainActivity">
 
     <EditText
+        android:layout_centerHorizontal="true"
         android:id="@+id/email"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:hint="Your Email"
@@ -21,7 +23,7 @@
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:hint="Your Name"
@@ -32,7 +34,7 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:hint="Password"
@@ -43,7 +45,7 @@
 
     <EditText
         android:id="@+id/dateOfBirth"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:hint="dd/mm/yyyy"
@@ -96,12 +98,15 @@
         android:orientation="vertical"
         android:layout_marginTop="24dp" >
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignup"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_weight="1"
+            android:background="@drawable/button1"
             android:text="Sign Up"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <TextView
@@ -113,13 +118,16 @@
             android:textAlignment="center"
             android:textSize="14sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_centerHorizontal="true"
             android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text"
             android:layout_marginTop="5dp"
+            android:background="@drawable/button1"
             android:text="Login"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
     </LinearLayout>
