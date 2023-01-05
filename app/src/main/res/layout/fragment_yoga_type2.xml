@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7E7FB"
+    tools:context=".YogaType2" >
+
+    <TextView
+        android:id="@+id/TVYoga2"
+        android:layout_width="383dp"
+        android:layout_height="78dp"
+        android:background="#9C89FF"
+        android:text="CHILD'S POSE  "
+        android:textAlignment="center"
+        android:textColor="#050404"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/TVInstructions"
+        android:layout_width="194dp"
+        android:layout_height="35dp"
+        android:text="Instructions : "
+        android:textColor="#0E0D0D"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TVStep1"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="1.Sit on your heels, knees spread mat distance apart and bring your head towards the floor"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/TVStep2"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="2.Your arms can be either stretched out to the front, by your side or hands underneath your forehead"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <TextView
+        android:id="@+id/TVStep3"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="3.Breathe into your lower back"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
+        app:layout_constraintVertical_bias="0.397" />
+
+    <TextView
+        android:id="@+id/TVStep4"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="4.Stay for anywhere between 30 seconds and several minutes in this resting pose."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <TextView
+        android:id="@+id/TVStep5"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="5.To come out, exhale and roll up vertebra by vertebra, or come back to sitting with a straight spine."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/BtnYoutubeLink"
+        android:layout_width="205dp"
+        android:layout_height="77dp"
+        android:backgroundTint="#DB1919"
+        android:text="Watch the tutorial!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVStep5"
+        app:layout_constraintVertical_bias="0.402" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

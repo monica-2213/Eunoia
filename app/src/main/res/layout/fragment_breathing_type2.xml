@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7E7FB"
+    tools:context=".BreathingType2" >
+
+    <TextView
+        android:id="@+id/TVBreathe2"
+        android:layout_width="383dp"
+        android:layout_height="78dp"
+        android:background="#9C89FF"
+        android:text="BOX BREATHING "
+        android:textAlignment="center"
+        android:textColor="#050404"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/TVInstructions"
+        android:layout_width="194dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="472dp"
+        android:text="Instructions : "
+        android:textColor="#0E0D0D"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVBreathe2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TVStep1"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="1.Breathe out slowly, releasing all the air from your lungs."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVBreathe2"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/TVStep2"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="2.Breathe in through your nose as you slowly count to four in your head. Be conscious of how the air fills your lungs and stomach."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVBreathe2"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <TextView
+        android:id="@+id/TVStep3"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="3.Hold your breath for a count of four."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVBreathe2"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <TextView
+        android:id="@+id/TVStep4"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="4.Exhale for another count of four."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVBreathe2"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <TextView
+        android:id="@+id/TVStep5"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="5.Hold your breath again for a count of four."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVBreathe2"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <TextView
+        android:id="@+id/TVStep6"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:background="#9C89FF"
+        android:text="6.Repeat for three to four rounds."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVBreathe2"
+        app:layout_constraintVertical_bias="0.938" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
