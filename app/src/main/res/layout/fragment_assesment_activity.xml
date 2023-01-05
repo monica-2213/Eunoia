@@ -40,6 +40,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
             android:id="@+id/BtnAns1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,6 +50,8 @@
             android:textColor="#000000" />
 
         <Button
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
             android:id="@+id/BtnAns2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,6 +60,8 @@
             android:textColor="#000000" />
 
         <Button
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
             android:id="@+id/BtnAns3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
