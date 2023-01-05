@@ -1,71 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/img4"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingTop="15dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="382dp"
-        android:layout_height="56dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="247dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textAlignment="center"
-        android:text="Welcome To"
-        android:textColor="@color/black"
-        android:textSize="45sp" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Your Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:paddingTop="20dp"/>
 
-    <TextView
-        android:id="@+id/for_living_"
-        android:layout_width="382dp"
-        android:layout_height="56dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="448dp"
-        android:fontFamily="@font/work_sans_medium"
-        android:gravity="top"
-        android:text="For living happier and healthier everyday"
-        android:textSize="22sp" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/BTNStart"
-        android:layout_width="176dp"
-        android:layout_height="64dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="521dp"
-        android:fontFamily="@font/raleway_medium"
-        android:text="start"
-        android:drawableRight="@drawable/ic_baseline_arrow_forward_24" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="166dp"
-        android:layout_height="59dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="129dp"
-        android:layout_marginTop="284dp"
-        android:fontFamily="@font/bad_script"
-        android:text="EUNOIA"
-        android:textSize="45sp" />
+    <EditText
+        android:id="@+id/dateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="dd/mm/yyyy"
+        android:maxLines="1"
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="209dp"
-        android:layout_height="242dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="106dp"
-        android:layout_marginTop="66dp"
-        android:src="@drawable/eunoiaicon" />
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:textAlignment="center">
 
-</RelativeLayout>
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/notToSay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prefer Not to Say"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp" >
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Already a user?"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="5dp"
+            android:text="Login"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +9,7 @@
     android:background="@drawable/img_3">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/Action"
         android:layout_width="306dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.234" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/EmergencyContactName"
         android:layout_width="308dp"
         android:layout_height="50dp"
         android:layout_marginStart="68dp"
@@ -86,7 +86,7 @@
         app:layout_constraintVertical_bias="0.483" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/EmergencyContactNumber"
         android:layout_width="320dp"
         android:layout_height="49dp"
         android:layout_marginStart="68dp"
@@ -103,7 +103,7 @@
         app:layout_constraintVertical_bias="0.709" />
 
     <EditText
-        android:id="@+id/ETConfirmPass"
+        android:id="@+id/RowToEdit"
         android:layout_width="313dp"
         android:layout_height="52dp"
         android:layout_marginStart="67dp"

@@ -1,92 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img2"
+    android:background="#E2CEFF"
+    android:padding="10dp"
     tools:context=".LoginActivity">
 
+    <EditText
+        android:id="@+id/email1"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Your Email" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email1"
+        android:layout_marginTop="50dp"
+        android:hint="Your Password" />
+
+    <Button
+        android:id="@+id/btnLogin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password1"
+        android:layout_marginTop="50dp"
+        android:text="Login" />
+
     <TextView
-        android:id="@+id/TVTitleWelcome"
-        android:layout_width="wrap_content"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Login to Your Account"
-        android:textSize="24sp"
-        android:textColor="#616161"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.356"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
-
-    <EditText
-        android:id="@+id/ETUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.332" />
+        android:layout_below="@+id/btnLogin1"
+        android:layout_marginTop="50dp"
+        android:hint="Don't have an account yet?"
+        android:textSize="12sp" />
 
     <Button
-        android:id="@+id/BTNLogin"
-        android:layout_width="106dp"
-        android:layout_height="46dp"
-        android:text="LOGIN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
-
-    <EditText
-        android:id="@+id/ETPassword"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnSignup1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        android:layout_below="@+id/text"
+        android:layout_marginTop="10dp"
+        android:text="Create New Account" />
 
-    <EditText
-        android:id="@+id/ETConfirmPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Confirm Password"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.303"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
