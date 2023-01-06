@@ -139,11 +139,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.666" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/ButtonManageEmContacts"
         android:layout_width="288dp"
         android:layout_height="55dp"
+        android:background="@drawable/button1"
         android:text="Manage Emergency Contacts"
+        android:textColor="@color/white"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
