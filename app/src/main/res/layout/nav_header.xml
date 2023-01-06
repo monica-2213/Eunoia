@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="176dp"
-    android:background="@color/purple_200"
+    android:background="@drawable/img4"
     android:gravity="bottom"
     android:orientation="vertical"
     android:padding="16dp"
@@ -16,6 +16,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_semibold"
         android:paddingTop="8dp"
         android:text="Eunonia"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />

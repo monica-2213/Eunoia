@@ -17,7 +17,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.tracker.R;
+import com.example.eunoia.R;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7E7FB"
+    android:background="@drawable/img_3"
     tools:context=".YogaType3" >
 
     <TextView
@@ -46,6 +46,7 @@
         android:background="#9C89FF"
         android:text="1.To come into Hero pose, begin in an all fours position on your hands and knees."
         android:textColor="#000000"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
@@ -60,6 +61,7 @@
         android:background="#9C89FF"
         android:text="2.Bring your knees closer together and separate your feet slightly wider than hip distance apart."
         android:textColor="#000000"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
@@ -74,6 +76,7 @@
         android:background="#9C89FF"
         android:text="3.Press the top of your feet down and slowly lower your hips back until eventually sitting on the mat (or props) between the heels."
         android:textColor="#000000"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
@@ -88,6 +91,7 @@
         android:background="#9C89FF"
         android:text="4.Use your hands to roll the flesh of your calves away, draw your navel in and up, ground through your sitting bones and extend through the crown of your head."
         android:textColor="#000000"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
@@ -102,12 +106,13 @@
         android:background="#9C89FF"
         android:text="5.Stay for 5 to 10 breaths."
         android:textColor="#000000"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVYoga3"
-        app:layout_constraintVertical_bias="0.665" />
+        app:layout_constraintVertical_bias="0.662" />
 
     <TextView
         android:id="@+id/TVStep6"
@@ -116,19 +121,21 @@
         android:background="#9C89FF"
         android:text="6.Come out of the pose the way you came in, by placing the hands in front of you and lifting the hips back up to all fours."
         android:textColor="#000000"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVYoga3"
-        app:layout_constraintVertical_bias="0.806" />
+        app:layout_constraintVertical_bias="0.801" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BtnYoutubeLink"
         android:layout_width="205dp"
         android:layout_height="77dp"
-        android:backgroundTint="#DB1919"
+        android:background="@drawable/button2"
         android:text="Watch the tutorial!"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

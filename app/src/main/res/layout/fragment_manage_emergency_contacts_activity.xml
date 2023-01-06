@@ -9,12 +9,12 @@
     android:background="@drawable/img_3">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/Action"
         android:layout_width="306dp"
         android:layout_height="48dp"
         android:ems="10"
+        android:hint="Change/Add/Delete"
         android:inputType="textPersonName"
-        android:text="Change/Add/Delete"
         android:textColor="#6E6565"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,14 +24,14 @@
         app:layout_constraintVertical_bias="0.234" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/EmergencyContactName"
         android:layout_width="308dp"
         android:layout_height="50dp"
         android:layout_marginStart="68dp"
         android:layout_marginEnd="134dp"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName"
-        android:text="Name"
         android:textColor="#6E6565"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,14 +86,14 @@
         app:layout_constraintVertical_bias="0.483" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/EmergencyContactNumber"
         android:layout_width="320dp"
         android:layout_height="49dp"
         android:layout_marginStart="68dp"
         android:layout_marginEnd="134dp"
         android:ems="10"
+        android:hint="Phone Number"
         android:inputType="textPersonName"
-        android:text="Phone Number"
         android:textColor="#6E6565"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,14 +103,14 @@
         app:layout_constraintVertical_bias="0.709" />
 
     <EditText
-        android:id="@+id/ETConfirmPass"
+        android:id="@+id/RowToEdit"
         android:layout_width="313dp"
         android:layout_height="52dp"
         android:layout_marginStart="67dp"
         android:layout_marginEnd="134dp"
         android:ems="10"
+        android:hint="Row1/Row2/Row3"
         android:inputType="textPersonName"
-        android:text="Row1/Row2/Row3"
         android:textColor="#6E6565"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,13 +134,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.178" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BTNUpdate"
         android:layout_width="148dp"
         android:layout_height="64dp"
         android:layout_marginStart="142dp"
         android:layout_marginEnd="121dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/raleway_semibold"
         android:text="UPDATE"
+        android:textColor="@color/white"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

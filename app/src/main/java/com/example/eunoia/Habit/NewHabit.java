@@ -14,7 +14,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.tracker.R;
+import com.example.eunoia.R;
+
 
 import java.text.DateFormat;
 import java.util.Calendar;

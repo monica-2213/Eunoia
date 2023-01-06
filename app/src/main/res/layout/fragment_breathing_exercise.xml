@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7E7FB"
+    android:background="@drawable/img_3"
     tools:context=".breathing_exercise" >
 
     <Button
         android:id="@+id/BtnBreathe3"
-        android:layout_width="287dp"
+        android:layout_width="316dp"
         android:layout_height="111dp"
         android:backgroundTint="#9C89FF"
         android:text="4-7-8 BREATHING"
@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/BtnBreathe2"
-        android:layout_width="304dp"
+        android:layout_width="316dp"
         android:layout_height="99dp"
         android:backgroundTint="#9C89FF"
         android:text="BOX BREATHING"
