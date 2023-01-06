@@ -144,6 +144,7 @@
         android:layout_width="288dp"
         android:layout_height="55dp"
         android:background="@drawable/button1"
+        android:fontFamily="@font/raleway_bold"
         android:text="Manage Emergency Contacts"
         android:textColor="@color/white"
         app:cornerRadius="20dp"

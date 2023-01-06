@@ -137,7 +137,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BTNUpdate"
         android:layout_width="148dp"
-        android:layout_height="64dp"
+        android:layout_height="60dp"
         android:layout_marginStart="142dp"
         android:layout_marginEnd="121dp"
         android:background="@drawable/button1"

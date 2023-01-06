@@ -20,6 +20,7 @@
             android:layout_width="380dp"
             android:layout_height="65dp"
             android:background="#9C89FF"
+            android:fontFamily="@font/raleway_bold"
             android:text="BOX BREATHING "
             android:textAlignment="center"
             android:textColor="#050404"

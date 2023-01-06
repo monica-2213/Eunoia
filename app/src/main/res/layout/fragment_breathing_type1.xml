@@ -23,6 +23,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:background="#9C89FF"
+        android:fontFamily="@font/raleway_bold"
         android:text="ALTERNATE-NOSTRIL BREATHING "
         android:textAlignment="center"
         android:textColor="#050404"
