@@ -5,53 +5,65 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
-import androidx.annotation.Nullable;
+import android.database.sqlite.SQLiteStatement;
 
 public class DBHelper extends SQLiteOpenHelper {
-    public static final String DBNAME = "Login.db";
+
+    static String name = "database";
+    static int version = 1;
+
+    String createTableUser = "CREATE TABLE if not exists `user` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `email` TEXT," +
+            "`name` TEXT, `password` TEXT, `dob` TEXT, `gender` TEXT)";
 
     public DBHelper(Context context) {
-        super(context, "Login.db", null, 1);
+        super(context, name, null, version);
+        getWritableDatabase().execSQL(createTableUser);
     }
 
+    public void insertUser(ContentValues contentValues){
+        getWritableDatabase().insert("user", "", contentValues);
+    }
+
+    public boolean isLoginValid(String email, String password){
+        String sql = "Select count(*) from user where email = '"+email+"' and password='"+password+"'";
+        SQLiteStatement statement = getReadableDatabase().compileStatement(sql);
+        long l = statement.simpleQueryForLong();
+        statement.close();
+
+        if(l == 1){
+            return true;
+        }
+
+        else{
+            return false;
+        }
+    }
+
+    public Boolean checkusername(String email){
+        SQLiteDatabase database = this.getWritableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where email = ?", new String[] {email});
+        if (cursor.getCount() > 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public String returnEmail(String email){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where email = ?", new String[] {email});
+        return email;
+    }
 
     @Override
-    public void onCreate(SQLiteDatabase MyDB) {
-        MyDB.execSQL("create Table users(username TEXT primary key, password TEXT)");
+    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase MyDB, int i, int i1) {
-        MyDB.execSQL("drop Table if exists users");
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+
     }
 
-    public Boolean insertData(String username, String password){
-        SQLiteDatabase MyDB = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("username", username);
-        contentValues.put("password", password);
-        long result = MyDB.insert("users", null, contentValues);
-        if(result == -1) return false;
-        else
-            return true;
-    }
-
-    public Boolean checkUsername(String username){
-        SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("Select * from users where username = ?", new String[]{username});
-        if(cursor.getCount() > 0)
-            return true;
-        else
-            return false;
-    }
-
-    public Boolean checkUsernamePassword(String username, String password){
-        SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("Select * from users where username = ? and password = ? ", new String[]{username, password});
-        if(cursor.getCount() > 0)
-            return true;
-        else
-            return false;
-    }
 }

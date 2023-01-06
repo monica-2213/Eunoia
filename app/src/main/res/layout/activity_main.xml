@@ -1,50 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E2CEFF"
-    android:padding="10dp"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingTop="15dp">
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:hint="Username" />
+        android:gravity="center"
+        android:hint="Your Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/username"
-        android:layout_marginTop="50dp"
-        android:hint="Password" />
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/repassword"
+        android:id="@+id/dateOfBirth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
-        android:layout_marginTop="50dp"
-        android:hint="Confirm Password" />
+        android:gravity="center"
+        android:hint="dd/mm/yyyy"
+        android:maxLines="1"
+        android:paddingTop="20dp"
+        android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/btnSignup"
+    <RadioGroup
+        android:id="@+id/gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/repassword"
-        android:layout_marginTop="50dp"
-        android:text="Register" />
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:textAlignment="center">
 
-    <Button
-        android:id="@+id/btnLogin"
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/notToSay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prefer Not to Say"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSignup"
-        android:layout_marginTop="50dp"
-        android:text="Login" />
+        android:orientation="vertical"
+        android:layout_marginTop="24dp" >
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Already a user?"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="5dp"
+            android:text="Login"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

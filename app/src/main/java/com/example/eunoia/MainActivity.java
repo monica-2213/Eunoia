@@ -2,66 +2,80 @@ package com.example.eunoia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
+import android.util.Patterns;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText username, password, repassword;
-    Button signUp, login;
-    DBHelper DB;
+    EditText email, name, password, dateOfBirth;
+    RadioGroup gender;
+    Button btnSignUp, btnLogin;
+    DBHelper dbHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
-        repassword = (EditText) findViewById(R.id.repassword);
-        signUp = (Button) findViewById(R.id.btnSignup);
-        login = (Button) findViewById(R.id.btnLogin);
-        DB = new DBHelper(this);
+        email = findViewById(R.id.email);
+        name = findViewById(R.id.name);
+        password = findViewById(R.id.password);
+        dateOfBirth = findViewById(R.id.dateOfBirth);
+        gender = findViewById(R.id.gender);
+        btnSignUp = findViewById(R.id.btnSignup);
+        btnLogin = findViewById(R.id.btnLogin);
+        dbHelper = new DBHelper(this);
 
-        signUp.setOnClickListener(new View.OnClickListener() {
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                String user = username.getText().toString();
-                String pass = password.getText().toString();
-                String repass = repassword.getText().toString();
+                String emailUser = email.getText().toString();
+                String nameUser = name.getText().toString();
+                String passwordUser = password.getText().toString();
+                String DOBUser = dateOfBirth.getText().toString();
+                RadioButton checkedBtn = findViewById(gender.getCheckedRadioButtonId());
+                String genderUser = checkedBtn.getText().toString();
 
-                if(user.equals("") || pass.equals("") || repass.equals(""))
-                    Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                if(emailUser.equals("") || nameUser.equals("") || passwordUser.equals("") || DOBUser.equals("") || genderUser.equals("")){
+                    Toast.makeText(MainActivity.this, "Please enter all fields.", Toast.LENGTH_SHORT).show();
+                }
                 else{
-                    if(pass.equals(repass)){
-                        Boolean checkuser = DB.checkUsername(user);
-                        if(checkuser==false){
-                            Boolean insert = DB.insertData(user, pass);
-                            if(insert == true){
-                                Toast.makeText(MainActivity.this, "Registered Successfully!", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                                startActivity(intent);
-                            }else{
-                                Toast.makeText(MainActivity.this, "Registration Failed!", Toast.LENGTH_SHORT).show();
-                            }
+                    if(Patterns.EMAIL_ADDRESS.matcher(emailUser).matches()){
+                        Boolean checkuser = dbHelper.checkusername(emailUser);
+                        if(checkuser == false){
+                            ContentValues contentValues = new ContentValues();
+                            contentValues.put("email", emailUser);
+                            contentValues.put("name", nameUser);
+                            contentValues.put("password", passwordUser);
+                            contentValues.put("dob", DOBUser);
+                            contentValues.put("gender", genderUser);
+
+                            dbHelper.insertUser(contentValues);
+                            Toast.makeText(MainActivity.this, "Registration Successful! Login to Continue.", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                            startActivity(intent);
+                        } else{
+                            Toast.makeText(MainActivity.this, "Email already exists! Try a different email or proceed to login.", Toast.LENGTH_SHORT).show();
                         }
-                        else{
-                            Toast.makeText(MainActivity.this, "User already exist. Please proceed to login!", Toast.LENGTH_SHORT).show();
-                        }
-                    }else{
-                        Toast.makeText(MainActivity.this, "Passwords do not match.", Toast.LENGTH_SHORT).show();
+                    } else{
+                        Toast.makeText(MainActivity.this, "Invalid Email!", Toast.LENGTH_SHORT).show();
                     }
                 }
 
             }
         });
 
-        login.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -71,3 +85,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+

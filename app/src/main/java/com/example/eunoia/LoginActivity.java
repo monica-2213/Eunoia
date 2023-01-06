@@ -11,39 +11,47 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText username, password;
-    Button btnLogin;
-    DBHelper DB;
+    EditText email1, password1;
+    Button btnLogin1, btnSignUp1;
+    DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        username = (EditText) findViewById(R.id.username1);
-        password = (EditText) findViewById(R.id.password1);
-        btnLogin = (Button) findViewById(R.id.btnLogin1);
-        DB = new DBHelper(this);
+        email1 = findViewById(R.id.email1);
+        password1 = findViewById(R.id.password1);
+        btnLogin1 = findViewById(R.id.btnLogin1);
+        btnSignUp1 = findViewById(R.id.btnSignup1);
+        dbHelper = new DBHelper(this);
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnLogin1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String user = username.getText().toString();
-                String pass = password.getText().toString();
 
-                if(user.equals("") || pass.equals(""))
-                    Toast.makeText(LoginActivity.this, "Please enter all required fields!", Toast.LENGTH_SHORT).show();
+                String emailUser = email1.getText().toString();
+                String passwordUser = password1.getText().toString();
+
+                if(dbHelper.isLoginValid(emailUser, passwordUser)) {
+                    Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                    startActivity(intent);
+                }
                 else{
-                    Boolean checkuserpass = DB.checkUsernamePassword(user, pass);
-                    if(checkuserpass == true){
-                        Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-                        startActivity(intent);
-                    }else{
-                        Toast.makeText(LoginActivity.this, "Invalid Credentials!", Toast.LENGTH_SHORT).show();
-                    }
+                    Toast.makeText(LoginActivity.this, "Invalid Credentials! Try Again", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
+        btnSignUp1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        }
+        );
+
     }
 }
