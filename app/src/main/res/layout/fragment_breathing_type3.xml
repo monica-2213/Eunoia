@@ -22,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <TextView
         android:id="@+id/TVInstructions"
@@ -49,10 +49,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVBreathe3"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintVertical_bias="0.143" />
 
     <TextView
         android:id="@+id/TVStep2"
@@ -62,9 +62,8 @@
         android:text="2.Close your lips, inhaling silently through your nose as you count to four in your head."
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep1"
+        app:layout_constraintStart_toStartOf="@+id/TVStep1"
         app:layout_constraintTop_toBottomOf="@+id/TVBreathe3"
         app:layout_constraintVertical_bias="0.357" />
 
@@ -76,9 +75,8 @@
         android:text="3.Then,for seven seconds hold your breath."
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep2"
+        app:layout_constraintStart_toStartOf="@+id/TVStep2"
         app:layout_constraintTop_toBottomOf="@+id/TVBreathe3"
         app:layout_constraintVertical_bias="0.572" />
 
@@ -90,9 +88,8 @@
         android:text="4.Make another whooshing exhale from your mouth for eight seconds."
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep3"
+        app:layout_constraintStart_toStartOf="@+id/TVStep3"
         app:layout_constraintTop_toBottomOf="@+id/TVBreathe3"
         app:layout_constraintVertical_bias="0.797" />
 

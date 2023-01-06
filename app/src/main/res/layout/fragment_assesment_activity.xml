@@ -86,11 +86,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/SubmitBtn"
-        android:layout_width="102dp"
+        android:layout_width="110dp"
         android:layout_height="48dp"
         android:background="@drawable/button1"
+        android:fontFamily="@font/raleway_semibold"
         android:text="Submit"
         android:textColor="@color/white"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
