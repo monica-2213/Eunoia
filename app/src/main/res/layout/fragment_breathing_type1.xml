@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#F7E7FB"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_3"
     tools:context=".BreathingType1" >
 
     <TextView
         android:id="@+id/TVBreathe1"
         android:layout_width="383dp"
         android:layout_height="78dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:background="#9C89FF"
         android:text="ALTERNATE-NOSTRIL BREATHING "
         android:textAlignment="center"
@@ -19,10 +30,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.098" />
 
     <TextView
         android:id="@+id/TVInstructions"
@@ -37,119 +47,122 @@
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVBreathe1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+
+        android:id="@+id/TVStep2"
+        android:layout_width="373dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:background="#9C89FF"
+        android:text="2.Bring your right hand up to your nose and move your forefinger and middle finger out of the way. Place your thumb on your right nostril."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TVStep1"
+        app:layout_constraintTop_toBottomOf="@+id/TVStep1" />
 
     <TextView
         android:id="@+id/TVStep1"
         android:layout_width="374dp"
         android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:background="#9C89FF"
         android:text="1.Sit quietly somewhere you don’t need to give any tasks your full attention."
         android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVBreathe1"
-        app:layout_constraintVertical_bias="0.076" />
-
-    <TextView
-        android:id="@+id/TVStep2"
-        android:layout_width="374dp"
-        android:layout_height="55dp"
-        android:background="#9C89FF"
-        android:text="2.Bring your right hand up to your nose and move your forefinger and middle finger out of the way. Place your thumb on your right nostril."
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe1"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <TextView
         android:id="@+id/TVStep3"
         android:layout_width="374dp"
         android:layout_height="55dp"
+        android:layout_marginTop="32dp"
         android:background="#9C89FF"
         android:text="3.With this nostril covered, close your eyes and exhale fully and slowly through your left nostril."
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe1"
-        app:layout_constraintVertical_bias="0.351" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/TVStep2"
+        app:layout_constraintTop_toBottomOf="@+id/TVStep2" />
 
     <TextView
         android:id="@+id/TVStep4"
         android:layout_width="374dp"
         android:layout_height="55dp"
+        android:layout_marginTop="32dp"
         android:background="#9C89FF"
         android:text="4.Once you’ve exhaled completely, release your right nostril and put your ring finger on the left nostril."
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.403"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe1"
-        app:layout_constraintVertical_bias="0.482" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TVStep3"
+        app:layout_constraintTop_toBottomOf="@+id/TVStep3" />
 
     <TextView
         android:id="@+id/TVStep5"
         android:layout_width="374dp"
         android:layout_height="55dp"
+        android:layout_marginTop="32dp"
         android:background="#9C89FF"
         android:text="5.Breathe in deeply and slowly from the right side. Make sure your breath is smooth and continuous."
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.403"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe1"
-        app:layout_constraintVertical_bias="0.608" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep4"
+        app:layout_constraintStart_toStartOf="@+id/TVStep4"
+        app:layout_constraintTop_toBottomOf="@+id/TVStep4" />
 
     <TextView
         android:id="@+id/TVStep6"
         android:layout_width="374dp"
         android:layout_height="55dp"
+        android:layout_marginTop="32dp"
         android:background="#9C89FF"
         android:text="6.Once you’ve inhaled completely, exhale through your right nostril."
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.403"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe1"
-        app:layout_constraintVertical_bias="0.73" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/TVStep5"
+        app:layout_constraintTop_toBottomOf="@+id/TVStep5" />
 
     <TextView
         android:id="@+id/TVStep7"
-        android:layout_width="374dp"
-        android:layout_height="55dp"
+        android:layout_width="372dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
         android:background="#9C89FF"
         android:text="7.Release your ring finger and close your right nostril with your thumb again. Breathe in fully and exhale fully from your left nostril."
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.403"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe1"
-        app:layout_constraintVertical_bias="0.855" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep6"
+        app:layout_constraintStart_toStartOf="@+id/TVStep6"
+        app:layout_constraintTop_toBottomOf="@+id/TVStep6" />
 
     <TextView
         android:id="@+id/TVStep8"
-        android:layout_width="374dp"
-        android:layout_height="55dp"
+        android:layout_width="372dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
         android:background="#9C89FF"
         android:text="8.Repeat the full process two or more times."
         android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.403"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe1"
-        app:layout_constraintVertical_bias="0.992" />
-
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/TVStep7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/TVStep7"
+        app:layout_constraintTop_toBottomOf="@+id/TVStep7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

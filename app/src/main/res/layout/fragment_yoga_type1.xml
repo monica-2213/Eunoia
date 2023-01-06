@@ -81,12 +81,13 @@
         app:layout_constraintTop_toBottomOf="@+id/TVYoga1"
         app:layout_constraintVertical_bias="0.512" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BtnYoutubeLink"
         android:layout_width="205dp"
         android:layout_height="77dp"
-        android:backgroundTint="#DB1919"
+        android:background="@drawable/button2"
         android:text="Watch the tutorial!"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
