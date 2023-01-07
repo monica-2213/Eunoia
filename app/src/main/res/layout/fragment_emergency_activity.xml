@@ -10,32 +10,31 @@
 
     <TextView
         android:id="@+id/TVContact3"
-        android:layout_width="219dp"
-        android:layout_height="42dp"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
         android:text="Grandpa"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.381"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintVertical_bias="0.471" />
 
     <TextView
         android:id="@+id/TVContact2"
         android:layout_width="220dp"
         android:layout_height="27dp"
-        android:layout_marginTop="196dp"
         android:text="Mom"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/TVContact3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ButtonCall2"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.344" />
 
     <Button
         android:id="@+id/ButtonCall2"
@@ -127,17 +126,15 @@
         android:id="@+id/TVContact1"
         android:layout_width="220dp"
         android:layout_height="27dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginBottom="25dp"
         android:text="Dad"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/TVContact2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ButtonCall1"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.234" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/ButtonManageEmContacts"
