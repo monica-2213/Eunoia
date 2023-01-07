@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_3"
     tools:context=".BreathingType2" >
 
     <TextView
         android:id="@+id/TVBreathe3"
         android:layout_width="383dp"
-        android:layout_height="78dp"
-        android:background="#9C89FF"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/raleway_bold"
         android:text="4-7-8 BREATHING "
-        android:textAlignment="center"
         android:textColor="#050404"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -31,12 +28,12 @@
         android:layout_height="35dp"
         android:layout_marginBottom="472dp"
         android:text="Instructions : "
-        android:textColor="#0E0D0D"
+        android:textColor="@color/soft_purple"
         android:textSize="24sp"
-        android:textStyle="bold|italic"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVBreathe3"
         app:layout_constraintVertical_bias="0.0" />
@@ -47,14 +44,14 @@
         android:layout_height="55dp"
         android:background="@drawable/textview"
         android:gravity="center"
-        android:text="1. Let your lips part. Make a whooshing sound,exhaling completely through your mouth."
+        android:text="1. Let your lips part. Make a whooshing sound, exhaling completely through your mouth."
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe3"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
 
     <TextView
         android:id="@+id/TVStep2"
@@ -66,9 +63,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TVStep1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TVStep1"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe3"
-        app:layout_constraintVertical_bias="0.357" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep1"
+        app:layout_constraintVertical_bias="0.097" />
 
     <TextView
         android:id="@+id/TVStep3"
@@ -80,9 +78,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TVStep2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TVStep2"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe3"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep2"
+        app:layout_constraintVertical_bias="0.139" />
 
     <TextView
         android:id="@+id/TVStep4"
@@ -94,9 +93,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TVStep3"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TVStep3"
-        app:layout_constraintTop_toBottomOf="@+id/TVBreathe3"
-        app:layout_constraintVertical_bias="0.797" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep3"
+        app:layout_constraintVertical_bias="0.215" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

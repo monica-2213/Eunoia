@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="1dp"
-    android:background="@drawable/img_3"
     android:fillViewport="true"
     tools:context=".BreathingType2" >
 
@@ -15,40 +14,38 @@
         android:layout_height="wrap_content"
         tools:context=".MainActivity">
 
+
         <TextView
             android:id="@+id/TVBreathe2"
             android:layout_width="380dp"
-            android:layout_height="65dp"
-            android:background="#9C89FF"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/raleway_bold"
             android:text="BOX BREATHING "
-            android:textAlignment="center"
             android:textColor="#050404"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintHorizontal_bias="0.548"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.089" />
+            app:layout_constraintVertical_bias="0.098" />
 
         <TextView
             android:id="@+id/TVInstructions"
             android:layout_width="194dp"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="472dp"
             android:text="Instructions : "
-            android:textColor="#0E0D0D"
+            android:textColor="@color/soft_purple"
             android:textSize="24sp"
-            android:textStyle="bold|italic"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintHorizontal_bias="0.078"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TVBreathe2"
-            app:layout_constraintVertical_bias="0.138" />
-
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/TVStep1"

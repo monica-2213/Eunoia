@@ -14,14 +14,13 @@
             android:title="Tracker" />
 
         <item
-            android:id="@+id/nav_help"
-            android:icon="@drawable/help"
-            android:title="Help" />
-
-        <item
             android:id="@+id/nav_recommendation"
             android:icon="@drawable/recommendation"
             android:title="Recommendation" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:title="Help" />
 
         <item
             android:id="@+id/nav_emergency"

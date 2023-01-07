@@ -5,8 +5,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HelplineActivity"
-    android:background="@drawable/img_3">
+    tools:context=".HelplineActivity">
 
     <TextView
         android:id="@+id/textView10"
