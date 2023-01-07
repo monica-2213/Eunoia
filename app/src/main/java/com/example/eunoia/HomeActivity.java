@@ -43,6 +43,18 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
                 startActivity(intent);
                 break;
+
+            case R.id.nav_help:
+
+                break;
+
+            case R.id.nav_recommendation:
+
+                break;
+
+            case R.id.nav_emergency:
+
+                break;
         }
 
         return true;
