@@ -10,10 +10,8 @@
     <TextView
         android:id="@+id/TVYoga2"
         android:layout_width="383dp"
-        android:layout_height="78dp"
-        android:background="@color/soft_purple"
+        android:layout_height="wrap_content"
         android:text="CHILD'S POSE  "
-        android:textAlignment="center"
         android:textColor="#0D47A1"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -22,19 +20,19 @@
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.103" />
 
     <TextView
         android:id="@+id/TVInstructions"
         android:layout_width="194dp"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:text="Instructions : "
         android:textColor="#0E0D0D"
         android:textSize="24sp"
-        android:textStyle="bold|italic"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
         app:layout_constraintVertical_bias="0.0" />
@@ -73,16 +71,17 @@
         android:id="@+id/TVStep3"
         android:layout_width="374dp"
         android:layout_height="55dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/textview"
         android:gravity="center"
         android:text="3.Breathe into your lower back"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TVStep2"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/TVStep2"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep2"
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
         android:id="@+id/TVStep4"
@@ -96,8 +95,8 @@
         app:layout_constraintEnd_toEndOf="@+id/TVStep3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TVStep3"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
-        app:layout_constraintVertical_bias="0.584" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep3"
+        app:layout_constraintVertical_bias="0.087" />
 
     <TextView
         android:id="@+id/TVStep5"
@@ -109,10 +108,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TVStep4"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/TVStep4"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
-        app:layout_constraintVertical_bias="0.744" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep4"
+        app:layout_constraintVertical_bias="0.128" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BtnYoutubeLink"
@@ -126,7 +125,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVStep5"
-        app:layout_constraintVertical_bias="0.616" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

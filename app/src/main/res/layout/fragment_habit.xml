@@ -32,14 +32,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.495" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addEntry"
-        android:layout_width="wrap_content"
+        android:layout_width="148dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/button1"
         android:fontFamily="@font/raleway_bold"
         android:text="Add Entry"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ListView" />

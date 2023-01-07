@@ -9,9 +9,8 @@
     <TextView
 
         android:id="@+id/TVYoga3"
-        android:layout_width="383dp"
-        android:layout_height="78dp"
-        android:background="#9C89FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="HERO POSE  "
         android:textAlignment="center"
         android:textColor="#050404"
@@ -19,22 +18,22 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.106" />
 
     <TextView
         android:id="@+id/TVInstructions"
-        android:layout_width="194dp"
-        android:layout_height="35dp"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
         android:text="Instructions : "
         android:textColor="#0E0D0D"
         android:textSize="24sp"
-        android:textStyle="bold|italic"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVYoga3"
         app:layout_constraintVertical_bias="0.0" />
@@ -50,10 +49,10 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVYoga3"
-        app:layout_constraintVertical_bias="0.094" />
+        app:layout_constraintVertical_bias="0.114" />
 
     <TextView
         android:id="@+id/TVStep2"
@@ -66,15 +65,15 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga3"
-        app:layout_constraintVertical_bias="0.237" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep1"
+        app:layout_constraintVertical_bias="0.034" />
 
     <TextView
         android:id="@+id/TVStep3"
         android:layout_width="370dp"
-        android:layout_height="60dp"
+        android:layout_height="65dp"
         android:background="@drawable/textview"
         android:gravity="center"
         android:text="  3. Press the top of your feet down and slowly lower your hips back until eventually sitting on the mat (or props) between the heels."
@@ -82,26 +81,27 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga3"
-        app:layout_constraintVertical_bias="0.373" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep2"
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/TVStep4"
         android:layout_width="370dp"
-        android:layout_height="60dp"
+        android:layout_height="75dp"
         android:background="@drawable/textview"
         android:gravity="center"
-        android:text="  4. Use your hands to roll the flesh of your calves away, draw your navel in and up, ground through your sitting bones and extend through the crown of your head."
+        android:text="  4. Use your hands to roll the flesh of your calves
+        away, draw your navel in and up, ground through your sitting bones and extend through the crown of your head."
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga3"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep3"
+        app:layout_constraintVertical_bias="0.076" />
 
     <TextView
         android:id="@+id/TVStep5"
@@ -114,10 +114,10 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga3"
-        app:layout_constraintVertical_bias="0.662" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep4"
+        app:layout_constraintVertical_bias="0.086" />
 
     <TextView
         android:id="@+id/TVStep6"
@@ -130,10 +130,10 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga3"
-        app:layout_constraintVertical_bias="0.801" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep5"
+        app:layout_constraintVertical_bias="0.155" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BtnYoutubeLink"
@@ -146,9 +146,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVStep6"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
