@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TrackerMenu"
-    android:id="@+id/trackerMenu"
-    android:background="@drawable/img_3">
+    android:id="@+id/trackerMenu">
 
     <ImageButton
         android:id="@+id/mood"
@@ -46,10 +45,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.109" />
 
     <TextView
         android:id="@+id/HabitTV"

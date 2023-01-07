@@ -3,6 +3,7 @@ package com.example.eunoia;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,11 +15,20 @@ public class LoginActivity extends AppCompatActivity {
     EditText email1, password1;
     Button btnLogin1, btnSignUp1;
     DBHelper dbHelper;
+    String username;
+    int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            username = extras.getString("username");
+            count++;
+            //The key argument here must match that used in the other activity
+        }
 
         email1 = findViewById(R.id.email1);
         password1 = findViewById(R.id.password1);
@@ -33,9 +43,17 @@ public class LoginActivity extends AppCompatActivity {
                 String emailUser = email1.getText().toString();
                 String passwordUser = password1.getText().toString();
 
+                if(count==0){
+                    Cursor cursor = dbHelper.getUsername(emailUser);
+                    cursor.moveToNext();
+                    username = cursor.getString(2);}
+
                 if(dbHelper.isLoginValid(emailUser, passwordUser)) {
+
+
                     Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                    intent.putExtra("username",username);
                     startActivity(intent);
                 }
                 else{

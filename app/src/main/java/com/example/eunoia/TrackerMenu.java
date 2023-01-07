@@ -2,11 +2,19 @@ package com.example.eunoia;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
+import com.example.eunoia.Habit.Habit;
+import com.example.eunoia.Mode.Mood;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +22,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class TrackerMenu extends Fragment {
+
+    String username;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -60,5 +70,40 @@ public class TrackerMenu extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_tracker_menu, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        username = this.getArguments().getString("username");
+        TextView tv = view.findViewById(R.id.username);
+        tv.setText("Hello "+username);
+
+        ImageButton mood = view.findViewById(R.id.mood);
+        View.OnClickListener OCLmood =new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("username",username);
+                Fragment mood = new Mood();
+                mood.setArguments(bundle);
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.frameLayout, mood).addToBackStack(null).commit();
+            }
+        };
+        mood.setOnClickListener(OCLmood);
+
+        ImageButton habit = view.findViewById(R.id.habit);
+        View.OnClickListener OCLhabit =new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("username",username);
+                Fragment habit = new Habit();
+                habit.setArguments(bundle);
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.frameLayout, habit).addToBackStack(null).commit();
+            }
+        };
+        habit.setOnClickListener(OCLhabit);
     }
 }

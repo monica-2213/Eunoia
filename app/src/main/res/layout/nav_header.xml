@@ -9,16 +9,18 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_width="106dp"
+        android:layout_height="99dp"
+        android:src="@drawable/eunoiaicon" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
         android:fontFamily="@font/raleway_semibold"
         android:paddingTop="8dp"
-        android:text="Eunonia"
+        android:text="EUNOIA"
+        android:textStyle="bold"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
 

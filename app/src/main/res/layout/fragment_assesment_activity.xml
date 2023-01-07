@@ -5,8 +5,7 @@
     android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AssesmentActivity"
-    android:background="@drawable/img_3">
+    tools:context=".AssesmentActivity">
 
     <TextView
         android:id="@+id/TVTitle"
@@ -92,7 +91,7 @@
         android:fontFamily="@font/raleway_semibold"
         android:text="Submit"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
