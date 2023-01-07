@@ -19,6 +19,7 @@ public class MenuActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if(extras!=null){
             username = extras.getString("username");
+            Toast.makeText(MenuActivity.this, username, Toast.LENGTH_SHORT).show();
         }else {
             username = "decoy";
         }

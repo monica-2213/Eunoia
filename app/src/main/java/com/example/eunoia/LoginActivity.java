@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(dbHelper.isLoginValid(emailUser, passwordUser)) {
                     Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     intent.putExtra("username",username);
                     startActivity(intent);
                 }

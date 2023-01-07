@@ -10,11 +10,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private DrawerLayout drawer;
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            username = extras.getString("username");
+            //The key argument here must match that used in the other activity
+        }
+        else{
+            username = "Wanderer";
+        }
 
         drawer = findViewById(R.id.drawerLayout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -41,6 +52,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_tracker:
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
                 break;
 

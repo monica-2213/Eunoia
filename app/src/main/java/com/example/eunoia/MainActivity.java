@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
                     dbHelper.insertUser(contentValues);
                     Toast.makeText(MainActivity.this, "Registration Successful! Login to Continue.", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                     intent.putExtra("username",nameUser);
                     startActivity(intent);
                 }
