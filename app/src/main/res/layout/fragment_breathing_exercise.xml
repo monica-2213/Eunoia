@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_3"
     tools:context=".breathing_exercise" >
 
     <Button
@@ -42,7 +41,7 @@
         android:id="@+id/BtnBreathe1"
         android:layout_width="316dp"
         android:layout_height="104dp"
-        android:backgroundTint="#9C89FF"
+        android:backgroundTint="@color/soft_purple"
         android:fontFamily="@font/raleway_bold"
         android:text="ALTERNATE-NOSTRIL BREATHING"
         android:textSize="24sp"

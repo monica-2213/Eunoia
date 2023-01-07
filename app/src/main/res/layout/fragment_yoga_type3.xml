@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_3"
     tools:context=".YogaType3" >
 
     <TextView
+
         android:id="@+id/TVYoga3"
         android:layout_width="383dp"
         android:layout_height="78dp"
@@ -41,10 +41,11 @@
 
     <TextView
         android:id="@+id/TVStep1"
-        android:layout_width="374dp"
+        android:layout_width="370dp"
         android:layout_height="55dp"
-        android:background="#9C89FF"
-        android:text="1.To come into Hero pose, begin in an all fours position on your hands and knees."
+        android:background="@drawable/textview"
+        android:gravity="center"
+        android:text=" 1. To come into Hero pose, begin in an all fours position on your hands and knees."
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,10 +57,11 @@
 
     <TextView
         android:id="@+id/TVStep2"
-        android:layout_width="374dp"
+        android:layout_width="370dp"
         android:layout_height="55dp"
-        android:background="#9C89FF"
-        android:text="2.Bring your knees closer together and separate your feet slightly wider than hip distance apart."
+        android:background="@drawable/textview"
+        android:gravity="center"
+        android:text=" 2. Bring your knees closer together and separate your feet slightly wider than hip distance apart."
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,10 +73,11 @@
 
     <TextView
         android:id="@+id/TVStep3"
-        android:layout_width="374dp"
-        android:layout_height="55dp"
-        android:background="#9C89FF"
-        android:text="3.Press the top of your feet down and slowly lower your hips back until eventually sitting on the mat (or props) between the heels."
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:background="@drawable/textview"
+        android:gravity="center"
+        android:text="  3. Press the top of your feet down and slowly lower your hips back until eventually sitting on the mat (or props) between the heels."
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,10 +89,11 @@
 
     <TextView
         android:id="@+id/TVStep4"
-        android:layout_width="374dp"
-        android:layout_height="55dp"
-        android:background="#9C89FF"
-        android:text="4.Use your hands to roll the flesh of your calves away, draw your navel in and up, ground through your sitting bones and extend through the crown of your head."
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:background="@drawable/textview"
+        android:gravity="center"
+        android:text="  4. Use your hands to roll the flesh of your calves away, draw your navel in and up, ground through your sitting bones and extend through the crown of your head."
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,10 +105,11 @@
 
     <TextView
         android:id="@+id/TVStep5"
-        android:layout_width="374dp"
+        android:layout_width="370dp"
         android:layout_height="55dp"
-        android:background="#9C89FF"
-        android:text="5.Stay for 5 to 10 breaths."
+        android:background="@drawable/textview"
+        android:gravity="center"
+        android:text=" 5. Stay for 5 to 10 breaths."
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -116,10 +121,11 @@
 
     <TextView
         android:id="@+id/TVStep6"
-        android:layout_width="374dp"
-        android:layout_height="55dp"
-        android:background="#9C89FF"
-        android:text="6.Come out of the pose the way you came in, by placing the hands in front of you and lifting the hips back up to all fours."
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:background="@drawable/textview"
+        android:gravity="center"
+        android:text="  6. Come out of the pose the way you came in, by placing the hands in front of you and lifting the hips back up to all fours."
         android:textColor="#000000"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
