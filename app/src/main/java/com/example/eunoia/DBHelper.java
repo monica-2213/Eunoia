@@ -2,11 +2,10 @@ package com.example.eunoia;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteStatement;
-
-import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -40,6 +39,47 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    public Boolean checkusername(String email){
+        SQLiteDatabase database = this.getWritableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where email = ?", new String[] {email});
+        if (cursor.getCount() > 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public String returnEmail(String email){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where email = ?", new String[] {email});
+        return email;
+    }
+
+    public String returnName(String name){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where email = ?", new String[] {name});
+        return name;
+    }
+
+    public String returnPassword(String password){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where email = ?", new String[] {password});
+        return password;
+    }
+
+    public String returnDOB(String dob){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where email = ?", new String[] {dob});
+        return dob;
+    }
+
+    public String returnGender(String gender){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where email = ?", new String[] {gender});
+        return gender;
+    }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
@@ -49,4 +89,5 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
+
 }
