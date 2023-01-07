@@ -14,11 +14,18 @@ public class LoginActivity extends AppCompatActivity {
     EditText email1, password1;
     Button btnLogin1, btnSignUp1;
     DBHelper dbHelper;
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            username = extras.getString("username");
+            //The key argument here must match that used in the other activity
+        }
 
         email1 = findViewById(R.id.email1);
         password1 = findViewById(R.id.password1);
@@ -36,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(dbHelper.isLoginValid(emailUser, passwordUser)) {
                     Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                    intent.putExtra("username",username);
                     startActivity(intent);
                 }
                 else{
