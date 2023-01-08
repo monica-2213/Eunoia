@@ -6,6 +6,7 @@
     android:layout_margin="30dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/img_1"
     tools:context=".recommendation">
 
     <LinearLayout
@@ -42,6 +43,7 @@
                     android:layout_height="70dp"
                     android:layout_gravity="center"
                     android:backgroundTint="#A5A6F6"
+                    android:fontFamily="@font/poppins_semibold"
                     android:foregroundTint="#A13838"
                     android:text="MUSIC"
                     android:textAllCaps="true"
@@ -71,6 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="71dp"
                     android:backgroundTint="#A5A6F6"
+                    android:fontFamily="@font/poppins_semibold"
                     android:text="YOGA"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -98,6 +101,7 @@
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:backgroundTint="#A5A6F6"
+                android:fontFamily="@font/poppins_semibold"
                 android:foregroundTint="#A13838"
                 android:text="BREATHING"
                 android:textAllCaps="true"

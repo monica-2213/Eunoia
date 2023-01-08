@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".YogaType1" >
+    android:background="@drawable/img_1"
+    tools:context=".YogaType1">
 
     <TextView
         android:id="@+id/TVYoga1"
         android:layout_width="383dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
         android:text="EXTENDED PUPPY POSE "
         android:textColor="#050404"
         android:textSize="30sp"
@@ -26,6 +27,7 @@
         android:id="@+id/TVInstructions"
         android:layout_width="194dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Instructions : "
         android:textColor="@color/soft_purple"
         android:textSize="18sp"
@@ -42,6 +44,7 @@
         android:layout_width="374dp"
         android:layout_height="55dp"
         android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text=" 1. Start on all fours with your shoulders over your wrists and your hips over your knees"
         android:textColor="#000000"
@@ -56,25 +59,29 @@
     <TextView
         android:id="@+id/TVStep2"
         android:layout_width="374dp"
-        android:layout_height="55dp"
+        android:layout_height="75dp"
         android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
-        android:text=" 2. Walk your hands forward, pull your hips back toward    the heels and lengthen the spine."
+        android:padding="5dp"
+        android:text=" 2. Walk your hands forward, pull your hips back toward  the heels and lengthen the spine."
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga1"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep1"
+        app:layout_constraintVertical_bias="0.083" />
 
     <TextView
         android:id="@+id/TVStep3"
         android:layout_width="374dp"
         android:layout_height="55dp"
         android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
+        android:padding="5dp"
         android:text=" 3. Rest your forehead on the mat and relax for 30 seconds to 1 minute."
         android:textColor="#000000"
         android:textSize="16sp"
@@ -82,8 +89,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVYoga1"
-        app:layout_constraintVertical_bias="0.512" />
+        app:layout_constraintTop_toBottomOf="@+id/TVStep2"
+        app:layout_constraintVertical_bias="0.14" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BtnYoutubeLink"

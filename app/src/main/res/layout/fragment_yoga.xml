@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Yoga">
+    tools:context=".Yoga"
+    android:background="@drawable/img_1">
 
     <Button
         android:id="@+id/BtnYoga3"
         android:layout_width="233dp"
         android:layout_height="102dp"
         android:backgroundTint="@color/soft_purple"
+        android:fontFamily="@font/poppins_semibold"
         android:text="HERO POSE"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -26,6 +28,7 @@
         android:layout_width="236dp"
         android:layout_height="99dp"
         android:backgroundTint="#9C89FF"
+        android:fontFamily="@font/poppins_semibold"
         android:text="CHILD'S POSE"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -41,6 +44,7 @@
         android:layout_width="236dp"
         android:layout_height="102dp"
         android:backgroundTint="#9C89FF"
+        android:fontFamily="@font/poppins_semibold"
         android:text="EXTENDED PUPPY POSE"
         android:textSize="24sp"
         android:textStyle="bold"

@@ -10,54 +10,58 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:layout_marginLeft="80dp"
-        android:textAlignment="center"
         android:id="@+id/email"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="80dp"
+        android:fontFamily="@font/work_sans_medium"
         android:gravity="center"
         android:hint="Your Email"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:paddingTop="20dp"
-        android:textSize="20sp" />
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <EditText
-        android:layout_marginLeft="80dp"
         android:id="@+id/name"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/work_sans_medium"
         android:gravity="center"
         android:hint="Your Name"
         android:inputType="textPersonName"
         android:maxLines="1"
         android:paddingTop="20dp"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <EditText
-        android:layout_marginLeft="80dp"
         android:id="@+id/password"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/work_sans_medium"
         android:gravity="center"
         android:hint="Password"
         android:inputType="textPassword"
         android:maxLines="1"
         android:paddingTop="20dp"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <EditText
-        android:layout_marginLeft="80dp"
         android:id="@+id/dateOfBirth"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/work_sans_medium"
         android:gravity="center"
         android:hint="dd/mm/yyyy"
         android:maxLines="1"
         android:paddingTop="20dp"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
 
     <RadioGroup

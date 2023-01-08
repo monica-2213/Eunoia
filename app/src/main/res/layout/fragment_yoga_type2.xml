@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/img_1"
     tools:context=".YogaType2" >
 
     <TextView
         android:id="@+id/TVYoga2"
         android:layout_width="383dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
         android:text="CHILD'S POSE  "
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -26,6 +27,7 @@
         android:id="@+id/TVInstructions"
         android:layout_width="194dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Instructions : "
         android:textColor="@color/soft_purple"
         android:textSize="18sp"
@@ -40,26 +42,30 @@
     <TextView
         android:id="@+id/TVStep1"
         android:layout_width="374dp"
-        android:layout_height="55dp"
+        android:layout_height="60dp"
         android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
-        android:text="1. Sit on your heels, knees spread mat distance apart and bring your head towards the floor"
+        android:padding="5dp"
+        android:text=" 1. Sit on your heels, knees spread mat distance apart and bring your head towards the floor."
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVYoga2"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintVertical_bias="0.09" />
 
     <TextView
         android:id="@+id/TVStep2"
         android:layout_width="374dp"
-        android:layout_height="55dp"
+        android:layout_height="68dp"
         android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
-        android:text=" 2. Your arms can be either stretched out to the front, by your side or hands underneath your forehead"
+        android:text=" 2. Your arms can be either stretched out to the front, by your side or hands underneath your forehead."
         android:textColor="#000000"
+        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TVStep1"
         app:layout_constraintHorizontal_bias="0.0"
@@ -73,9 +79,11 @@
         android:layout_height="55dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
-        android:text="3.Breathe into your lower back"
+        android:text="3. Breathe into your lower back."
         android:textColor="#000000"
+        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TVStep2"
         app:layout_constraintHorizontal_bias="1.0"
@@ -88,6 +96,7 @@
         android:layout_width="374dp"
         android:layout_height="55dp"
         android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text="4. Stay for anywhere between 30 seconds and several minutes in this resting pose."
         android:textColor="#000000"
@@ -101,11 +110,13 @@
     <TextView
         android:id="@+id/TVStep5"
         android:layout_width="374dp"
-        android:layout_height="55dp"
+        android:layout_height="70dp"
         android:background="@drawable/textview"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text="5. To come out, exhale and roll up vertebra by vertebra, or come back to sitting with a straight spine."
         android:textColor="#000000"
+        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/TVStep4"
         app:layout_constraintHorizontal_bias="1.0"
@@ -126,6 +137,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915" />
+        app:layout_constraintVertical_bias="0.956" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

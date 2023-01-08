@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/img_1"
     tools:context=".Motivation.Motivation">
 
     <ImageView
         android:id="@+id/frame"
-        android:layout_width="369dp"
-        android:layout_height="547dp"
+        android:layout_width="358dp"
+        android:layout_height="534dp"
         android:scaleType="centerInside"
         android:src="@drawable/insp1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,29 +21,31 @@
 
     <ImageButton
         android:id="@+id/forward"
-        android:layout_width="75dp"
+        android:layout_width="73dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button1"
         android:scaleType="centerCrop"
-        android:background="@drawable/custome_border_ripple"
         android:src="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/backward"
-        android:layout_width="75dp"
+        android:layout_width="73dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="24dp"
-        android:scaleType="centerCrop"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/button1"
         android:rotation="180"
-        android:background="@drawable/custome_border_ripple"
+        android:scaleType="centerCrop"
         android:src="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

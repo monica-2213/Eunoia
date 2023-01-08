@@ -5,13 +5,14 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmergencyActivity"
-    android:background="@drawable/img_3">
+    android:background="@drawable/img_1"
+    tools:context=".EmergencyActivity">
 
     <TextView
         android:id="@+id/TVContact3"
         android:layout_width="212dp"
         android:layout_height="36dp"
+        android:fontFamily="@font/poppins"
         android:text="Grandpa"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -26,6 +27,7 @@
         android:id="@+id/TVContact2"
         android:layout_width="220dp"
         android:layout_height="27dp"
+        android:fontFamily="@font/poppins"
         android:text="Mom"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -67,7 +69,7 @@
         android:id="@+id/TVEmergencyContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/poppins_semibold"
         android:text="EMERGENCY CONTACTS"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -126,6 +128,7 @@
         android:id="@+id/TVContact1"
         android:layout_width="220dp"
         android:layout_height="27dp"
+        android:fontFamily="@font/poppins"
         android:text="Dad"
         android:textColor="#000000"
         android:textSize="20sp"

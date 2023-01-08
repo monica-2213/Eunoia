@@ -10,4 +10,5 @@
     <color name="background">#F7E7FB</color>
     <color name="invalid">#9C89FF</color>
     <color name="soft_purple">#9C89FF</color>
+    <color name="underline">#080606</color>
 </resources>

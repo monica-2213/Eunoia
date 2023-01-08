@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TrackerMenu"
-    android:id="@+id/trackerMenu">
+    android:id="@+id/trackerMenu"
+    android:background="@drawable/img_1">
 
     <ImageButton
         android:id="@+id/mood"
@@ -39,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
         android:layout_marginEnd="174dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="MOODS"
         android:textColor="@color/black"
         android:textSize="34sp"
@@ -56,6 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="179dp"
         android:layout_marginEnd="174dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="HABITS"
         android:textColor="@color/black"
         android:textSize="34sp"
@@ -71,6 +74,7 @@
         android:layout_width="329dp"
         android:layout_height="52dp"
         android:layout_marginEnd="64dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="HABITS"
         android:textColor="@color/black"
         android:textSize="34sp"

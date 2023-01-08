@@ -5,12 +5,14 @@
     android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AssesmentActivity">
+    tools:context=".AssesmentActivity"
+    android:background="@drawable/img_1">
 
     <TextView
         android:id="@+id/TVTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Total Questions"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -68,6 +70,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Question..."
         android:textColor="#000000"
         android:textSize="24sp"
