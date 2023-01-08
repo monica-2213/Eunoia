@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateNew"
-    android:background="@drawable/img_3">
+    tools:context=".CreateNew">
 
     <TextView
         android:id="@+id/Title"
@@ -31,9 +30,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/button1"
+        android:textColor="@color/white"
         android:id="@+id/addTask"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Add"
         android:layout_marginEnd="16dp"
