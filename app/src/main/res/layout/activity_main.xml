@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="15dp"
-    android:background="@drawable/img4"
+    android:background="@drawable/img2"
     tools:context=".MainActivity">
 
     <EditText

@@ -10,7 +10,7 @@
         android:id="@+id/BtnYoga3"
         android:layout_width="233dp"
         android:layout_height="102dp"
-        android:backgroundTint="#9C89FF"
+        android:backgroundTint="@color/soft_purple"
         android:text="HERO POSE"
         android:textSize="24sp"
         android:textStyle="bold"
