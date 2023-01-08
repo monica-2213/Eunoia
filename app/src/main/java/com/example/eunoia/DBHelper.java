@@ -90,4 +90,10 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
+    public Cursor getUsername(String email){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where email = ?", new String[] {email});
+        return cursor;
+    }
+
 }

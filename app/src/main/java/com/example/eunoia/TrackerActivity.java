@@ -5,9 +5,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
-public class MenuActivity extends AppCompatActivity {
+public class TrackerActivity extends AppCompatActivity {
 
     public FragmentManager fragmentManager;
     public String username;
