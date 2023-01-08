@@ -52,7 +52,7 @@ public class NewMood extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
+     * Use this factory method to create RecyclerViewTouchHelper new instance of
      * this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
@@ -105,7 +105,7 @@ public class NewMood extends Fragment {
         Calendar calendar = Calendar.getInstance();
         currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
 
-        SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");
+        SimpleDateFormat sdf = new SimpleDateFormat("h:mm RecyclerViewTouchHelper");
         currentTime = sdf.format(calendar.getTime());
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {

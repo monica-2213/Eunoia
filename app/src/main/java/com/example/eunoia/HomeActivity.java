@@ -47,12 +47,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.nav_home:
-
+                Intent intentMenu = new Intent(getApplicationContext(), MenuActivity.class);
+                intentMenu.putExtra("username",username);
+                startActivity(intentMenu);
                 break;
             case R.id.nav_tracker:
-                Intent intent = new Intent(getApplicationContext(), TrackerActivity.class);
-                intent.putExtra("username",username);
-                startActivity(intent);
+                Intent intentTrack = new Intent(getApplicationContext(), TrackerActivity.class);
+                intentTrack.putExtra("username",username);
+                startActivity(intentTrack);
                 break;
 
             case R.id.nav_help:
