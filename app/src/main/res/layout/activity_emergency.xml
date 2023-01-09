@@ -2,74 +2,99 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout3"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_1"
-    tools:context=".EmergencyActivity">
+    tools:context=".EmergencyActivity"
+    >
+
+    <TextView
+        android:id="@+id/number1"
+        android:layout_width="218dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="348dp"
+        android:text="0145678923"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVContact1" />
+
+    <TextView
+        android:id="@+id/number2"
+        android:layout_width="218dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="240dp"
+        android:text="0123456789"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVContact2" />
 
     <TextView
         android:id="@+id/TVContact3"
-        android:layout_width="212dp"
-        android:layout_height="36dp"
-        android:fontFamily="@font/poppins"
+        android:layout_width="219dp"
+        android:layout_height="42dp"
         android:text="Grandpa"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
-
-    <TextView
-        android:id="@+id/TVContact2"
-        android:layout_width="220dp"
-        android:layout_height="27dp"
-        android:fontFamily="@font/poppins"
-        android:text="Mom"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/ButtonCall2"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <Button
-        android:id="@+id/ButtonCall2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/ButtonCall3"
+        android:layout_width="91dp"
+        android:layout_height="69dp"
         android:backgroundTint="#FFFFFF"
         android:text="CALL"
         android:textColor="#602E9E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345" />
+        app:layout_constraintVertical_bias="0.519" />
+
+    <TextView
+        android:id="@+id/TVContact2"
+        android:layout_width="220dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="196dp"
+        android:text="Mom"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/TVContact3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
 
     <Button
-        android:id="@+id/ButtonNineOneOne"
-        android:layout_width="125dp"
-        android:layout_height="51dp"
-        android:backgroundTint="#E62009"
-        android:text="Call 911"
+        android:id="@+id/ButtonCall2"
+        android:layout_width="95dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="CALL"
+        android:textColor="#602E9E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.854" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <TextView
         android:id="@+id/TVEmergencyContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="sans-serif-medium"
         android:text="EMERGENCY CONTACTS"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -83,8 +108,8 @@
 
     <Button
         android:id="@+id/ButtonCall1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="65dp"
         android:backgroundTint="#FFFFFF"
         android:text="CALL"
         android:textColor="#602E9E"
@@ -95,20 +120,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.227" />
 
-    <Button
-        android:id="@+id/ButtonCall3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:text="CALL"
-        android:textColor="#602E9E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
-
     <View
         android:id="@+id/divider"
         android:layout_width="409dp"
@@ -116,10 +127,8 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="140dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="25dp"
         android:background="?android:attr/listDivider"
         android:backgroundTint="#00000000"
-        app:layout_constraintBottom_toTopOf="@+id/ButtonNineOneOne"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ButtonCall3" />
@@ -128,29 +137,41 @@
         android:id="@+id/TVContact1"
         android:layout_width="220dp"
         android:layout_height="27dp"
-        android:fontFamily="@font/poppins"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="25dp"
         android:text="Dad"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/ButtonCall1"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintBottom_toTopOf="@+id/TVContact2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234" />
+        app:layout_constraintVertical_bias="0.369" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/ButtonManageEmContacts"
         android:layout_width="288dp"
         android:layout_height="55dp"
-        android:background="@drawable/button1"
-        android:fontFamily="@font/raleway_bold"
         android:text="Manage Emergency Contacts"
-        android:textColor="@color/white"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/number3"
+        android:layout_width="218dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="130dp"
+        android:text="0193131754"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVContact3"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
