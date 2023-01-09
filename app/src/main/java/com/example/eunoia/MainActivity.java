@@ -3,6 +3,7 @@ package com.example.eunoia;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText email1, password1;
     Button btnLogin1, btnSignUp1;
     DBHelper dbHelper;
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +35,15 @@ public class MainActivity extends AppCompatActivity {
                 String emailUser = email1.getText().toString();
                 String passwordUser = password1.getText().toString();
 
+                Cursor cursor = dbHelper.getUsername(emailUser);
+                cursor.moveToNext();
+                username = cursor.getString(2);
+
+
                 if(dbHelper.isLoginValid(emailUser, passwordUser)) {
                     Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                    intent.putExtra("username",username);
                     startActivity(intent);
                 }
                 else{
