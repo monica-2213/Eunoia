@@ -10,29 +10,30 @@
 
     <ImageButton
         android:id="@+id/mood"
-        android:layout_width="203dp"
-        android:layout_height="203dp"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
         android:background="@drawable/custome_border_ripple"
         android:scaleType="centerInside"
         android:src="@drawable/mood"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintEnd_toEndOf="@+id/MoodTV"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/MoodTV"
+        app:layout_constraintTop_toBottomOf="@+id/MoodTV"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/habit"
-        android:layout_width="203dp"
-        android:layout_height="203dp"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
         android:background="@drawable/custome_border_ripple"
         android:scaleType="centerInside"
         android:src="@drawable/habit"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
+        app:layout_constraintEnd_toEndOf="@+id/HabitTV"
+        app:layout_constraintStart_toStartOf="@+id/HabitTV"
+        app:layout_constraintTop_toBottomOf="@+id/HabitTV"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/MoodTV"
@@ -47,10 +48,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <TextView
         android:id="@+id/HabitTV"
@@ -65,15 +66,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <TextView
         android:id="@+id/username"
-        android:layout_width="329dp"
+        android:layout_width="wrap_content"
         android:layout_height="52dp"
-        android:layout_marginEnd="64dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="HABITS"
         android:textColor="@color/black"
@@ -81,7 +82,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.047" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

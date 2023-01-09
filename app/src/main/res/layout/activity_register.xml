@@ -5,51 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RegisterActivity"
-    android:paddingTop="15dp">
+    android:paddingTop="15dp"
+    android:background="@drawable/img2"
+    tools:context=".RegisterActivity">
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
         android:hint="Your Email"
         android:inputType="textEmailAddress"
         android:maxLines="1"
-        android:textSize="20sp"
-        android:paddingTop="20dp"/>
+        android:paddingTop="20dp"
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
         android:hint="Your Name"
         android:inputType="textPersonName"
         android:maxLines="1"
         android:paddingTop="20dp"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
         android:hint="Password"
         android:inputType="textPassword"
         android:maxLines="1"
         android:paddingTop="20dp"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/dateOfBirth"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
         android:hint="dd/mm/yyyy"
         android:maxLines="1"
         android:paddingTop="20dp"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <RadioGroup
         android:id="@+id/gender"
@@ -57,6 +68,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingTop="20dp"
+        android:gravity="center"
         android:textAlignment="center">
 
         <RadioButton
@@ -75,13 +87,6 @@
             android:textSize="16sp" />
 
         <RadioButton
-            android:id="@+id/other"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Other"
-            android:textSize="16sp" />
-
-        <RadioButton
             android:id="@+id/notToSay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -96,13 +101,17 @@
         android:orientation="vertical"
         android:layout_marginTop="24dp" >
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignup"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="@drawable/button1"
+            android:fontFamily="@font/raleway_semibold"
             android:text="Sign Up"
-            android:textSize="24sp" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/text"
@@ -113,14 +122,18 @@
             android:textAlignment="center"
             android:textSize="14sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text"
+            android:layout_gravity="center"
             android:layout_marginTop="5dp"
+            android:background="@drawable/button1"
+            android:fontFamily="@font/raleway_semibold"
             android:text="Login"
-            android:textSize="24sp" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
     </LinearLayout>
 

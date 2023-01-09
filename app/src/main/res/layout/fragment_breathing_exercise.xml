@@ -7,50 +7,41 @@
     tools:context=".breathing_exercise"
     android:background="@drawable/img_1">
 
-    <Button
-        android:id="@+id/BtnBreathe3"
-        android:layout_width="316dp"
-        android:layout_height="111dp"
-        android:backgroundTint="#9C89FF"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="4-7-8 BREATHING"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnBreathe2"
-        app:layout_constraintVertical_bias="0.31" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/BtnBreathe2"
-        android:layout_width="316dp"
-        android:layout_height="99dp"
-        android:backgroundTint="#9C89FF"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="BOX BREATHING"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnBreathe1"
-        app:layout_constraintVertical_bias="0.149" />
+        <Button
+            android:id="@+id/BtnBreathe1"
+            android:layout_width="316dp"
+            android:layout_height="104dp"
+            android:backgroundTint="@color/soft_purple"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="ALTERNATE-NOSTRIL BREATHING"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/BtnBreathe1"
-        android:layout_width="316dp"
-        android:layout_height="104dp"
-        android:backgroundTint="@color/soft_purple"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="ALTERNATE-NOSTRIL BREATHING"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
+        <Button
+            android:id="@+id/BtnBreathe2"
+            android:layout_width="316dp"
+            android:layout_height="99dp"
+            android:backgroundTint="#9C89FF"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="BOX BREATHING"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/BtnBreathe3"
+            android:layout_width="316dp"
+            android:layout_height="111dp"
+            android:backgroundTint="#9C89FF"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="4-7-8 BREATHING"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
