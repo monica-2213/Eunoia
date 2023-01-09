@@ -1,147 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingTop="15dp"
-    android:background="@drawable/img2"
+    android:background="#E2CEFF"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/email"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="80dp"
-        android:fontFamily="@font/work_sans_medium"
-        android:gravity="center"
-        android:hint="Your Email"
+        android:id="@+id/email1"
         android:inputType="textEmailAddress"
-        android:maxLines="1"
-        android:paddingTop="20dp"
-        android:textAlignment="center"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:fontFamily="@font/work_sans_medium"
-        android:gravity="center"
-        android:hint="Your Name"
-        android:inputType="textPersonName"
-        android:maxLines="1"
-        android:paddingTop="20dp"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:fontFamily="@font/work_sans_medium"
-        android:gravity="center"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:paddingTop="20dp"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/dateOfBirth"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:fontFamily="@font/work_sans_medium"
-        android:gravity="center"
-        android:hint="dd/mm/yyyy"
-        android:maxLines="1"
-        android:paddingTop="20dp"
-        android:textSize="18sp" />
-
-
-    <RadioGroup
-        android:id="@+id/gender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="20dp"
-        android:layout_gravity="center"
-        android:textAlignment="center">
-
-        <RadioButton
-            android:id="@+id/male"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:checked="true"
-            android:text="Male"
-            android:textSize="16sp" />
-
-        <RadioButton
-            android:id="@+id/female"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="1dp"
-            android:text="Female"
-            android:textSize="16sp" />
-
-        <RadioButton
-            android:id="@+id/notToSay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="1dp"
-            android:text="Prefer Not to Say"
-            android:textSize="16sp" />
-
-    </RadioGroup>
-
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="24dp" >
+        android:layout_marginTop="50dp"
+        android:hint="Your Email" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnSignup"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/button1"
-            android:fontFamily="@font/raleway_semibold"
-            android:text="Sign Up"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
+    <EditText
+        android:id="@+id/password1"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email1"
+        android:layout_marginTop="50dp"
+        android:hint="Your Password" />
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:hint="Already a user?"
-            android:textAlignment="center"
-            android:textSize="14sp" />
+    <Button
+        android:id="@+id/btnLogin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password1"
+        android:layout_marginTop="50dp"
+        android:text="Login" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnLogin"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/text"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/button1"
-            android:fontFamily="@font/raleway_semibold"
-            android:text="Login"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin1"
+        android:layout_marginTop="50dp"
+        android:hint="Don't have an account yet?"
+        android:textSize="12sp" />
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnSignup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="10dp"
+        android:text="Create New Account" />
 
-</LinearLayout>
+</RelativeLayout>
