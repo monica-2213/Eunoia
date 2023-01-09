@@ -63,6 +63,5 @@ public class EmergencyActivity extends AppCompatActivity {
             }
         });
 
-
     }
 }

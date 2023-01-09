@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class HomeActivity extends AppCompatActivity {
     private DrawerLayout drawer;
     String username;
 
@@ -34,58 +34,5 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             username = "Wanderer";
         }
 
-        drawer = findViewById(R.id.drawerLayout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,toolbar,
-                R.string.navigation_drawer_open,R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-    }
-
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.nav_home:
-                Toast.makeText(this, "Already in the home page", Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.nav_motivation:
-                Intent intentMotivation = new Intent(getApplicationContext(), MotivationActivity.class);
-                intentMotivation.putExtra("username",username);
-                startActivity(intentMotivation);
-                break;
-
-            case R.id.nav_tracker:
-                Intent intentTrack = new Intent(getApplicationContext(), TrackerActivity.class);
-                intentTrack.putExtra("username",username);
-                startActivity(intentTrack);
-                break;
-
-            case R.id.nav_help:
-
-                break;
-
-            case R.id.nav_recommendation:
-
-                break;
-
-            case R.id.nav_emergency:
-
-                break;
-        }
-
-        return true;
-    }
-
-    @Override
-    public void onBackPressed() {
-        if(drawer.isDrawerOpen(GravityCompat.START)){
-            drawer.closeDrawer(GravityCompat.START);
-        }
-        else {
-            super.onBackPressed();
-        }
     }
 }
