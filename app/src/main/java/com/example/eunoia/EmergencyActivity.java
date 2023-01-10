@@ -41,14 +41,7 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        drawer = findViewById(R.id.drawerLayout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,toolbar,
-                R.string.navigation_drawer_open,R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
 
         textview = findViewById(R.id.TVContact1);
         numview = findViewById(R.id.number1);
@@ -58,7 +51,6 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
         numview3 = findViewById(R.id.number3);
 
         SharedPreferences sp = getApplicationContext().getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
-
 
         String Name1 = sp.getString(CONTACT_NAME, "");
         String Num1 = sp.getString(CONTACT_NUMBER, "");
@@ -84,6 +76,14 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
             }
         });
 
+        drawer = findViewById(R.id.drawerLayout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,toolbar,
+                R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
     }
 
     @Override

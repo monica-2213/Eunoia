@@ -19,7 +19,7 @@ public class recommendation extends Fragment {
     View.OnClickListener OCLMusic = new View.OnClickListener(){
         @Override
         public void onClick(View v){
-            Navigation.findNavController(view).navigate(R.id.action_recommendation_to_music);
+            Navigation.findNavController(view).navigate(R.id.desBreathing_exercise);
         }
     };
     BtnMusic.setOnClickListener(OCLMusic);

@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_recommendations"
-    app:startDestination="@id/breathing_exercise">
+    app:startDestination="@id/recommendation">
 
     <fragment
-        android:id="@+id/breathing_exercise"
+        android:id="@+id/desBreathing_exercise"
         android:name="com.example.eunoia.breathing_exercise"
         android:label="fragment_breathing_exercise"
         tools:layout="@layout/fragment_breathing_exercise" >
@@ -45,7 +45,7 @@
             app:destination="@id/yoga" />
         <action
             android:id="@+id/action_recommendation_to_breathing_exercise2"
-            app:destination="@id/breathing_exercise" />
+            app:destination="@id/desBreathing_exercise" />
         <action
             android:id="@+id/action_recommendation_to_music"
             app:destination="@id/music" />
