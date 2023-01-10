@@ -4,15 +4,25 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
 
 
-public class EmergencyActivity extends AppCompatActivity {
+public class EmergencyActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
+    private DrawerLayout drawer;
     TextView textview, numview, textview2, numview2, textview3, numview3;
     Button btnManageEm;
     private static final String SHARED_PREF_NAME = "Eunoia";
@@ -28,6 +38,17 @@ public class EmergencyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        drawer = findViewById(R.id.drawerLayout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,toolbar,
+                R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
         textview = findViewById(R.id.TVContact1);
         numview = findViewById(R.id.number1);
@@ -63,5 +84,49 @@ public class EmergencyActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.nav_home:
+                finish();
+                break;
+
+            case R.id.nav_motivation:
+                Intent intentMot = new Intent(getApplicationContext(), MotivationActivity.class);
+                startActivity(intentMot);
+                finish();
+                break;
+            case R.id.nav_tracker:
+                Intent intentTrack = new Intent(getApplicationContext(), TrackerActivity.class);
+                startActivity(intentTrack);
+                finish();
+                break;
+
+            case R.id.nav_help:
+
+                break;
+
+            case R.id.nav_recommendation:
+
+                break;
+
+            case R.id.nav_emergency:
+                Toast.makeText(this, "Already in the emergency page", Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(drawer.isDrawerOpen(GravityCompat.START)){
+            drawer.closeDrawer(GravityCompat.START);
+        }
+        else {
+            super.onBackPressed();
+        }
     }
 }
