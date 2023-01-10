@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_recommendations"
-    app:startDestination="@id/recommendation">
+    app:startDestination="@id/DesRecommendation">
 
     <fragment
         android:id="@+id/desBreathing_exercise"
@@ -31,12 +31,12 @@
         android:label="fragment_breathing_type3"
         tools:layout="@layout/fragment_breathing_type3" />
     <fragment
-        android:id="@+id/music"
+        android:id="@+id/DesMusic"
         android:name="com.example.eunoia.music"
         android:label="fragment_music"
-        tools:layout="@layout/fragment_music" />
+        tools:layout="@layout/fragment_music"/>
     <fragment
-        android:id="@+id/recommendation"
+        android:id="@+id/DesRecommendation"
         android:name="com.example.eunoia.recommendation"
         android:label="fragment_recommendation"
         tools:layout="@layout/fragment_recommendation" >
@@ -48,7 +48,7 @@
             app:destination="@id/desBreathing_exercise" />
         <action
             android:id="@+id/action_recommendation_to_music"
-            app:destination="@id/music" />
+            app:destination="@id/DesMusic" />
     </fragment>
     <fragment
         android:id="@+id/yoga"

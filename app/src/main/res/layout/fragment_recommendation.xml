@@ -39,7 +39,7 @@
                     android:src="@drawable/headphones" />
 
                 <Button
-                    android:id="@+id/BtnAssesment"
+                    android:id="@+id/BtnMusic"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_gravity="center"
@@ -70,7 +70,7 @@
                     android:src="@drawable/yogaicon" />
 
                 <Button
-                    android:id="@+id/Btn911"
+                    android:id="@+id/BtnYoga"
                     android:layout_width="match_parent"
                     android:layout_height="71dp"
                     android:backgroundTint="#A5A6F6"
