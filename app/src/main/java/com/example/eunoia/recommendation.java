@@ -3,14 +3,10 @@ package com.example.eunoia;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 
 
@@ -22,9 +18,9 @@ public class recommendation extends AppCompatActivity {
         setContentView(R.layout.fragment_recommendation);
 
 
-        BtnMusic = findViewById(R.id.BtnMusic);
+        BtnMusic = findViewById(R.id.BtnAssesment);
         BtnBreathing = findViewById(R.id.BtnBreathing);
-        BtnYoga = findViewById(R.id.BtnYoga);
+        BtnYoga = findViewById(R.id.Btn911);
 
         BtnMusic.setOnClickListener(new View.OnClickListener() {
             @Override
