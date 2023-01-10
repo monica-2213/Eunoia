@@ -70,7 +70,7 @@
     <TextView
         android:id="@+id/TVStep2"
         android:layout_width="370dp"
-        android:layout_height="55dp"
+        android:layout_height="75dp"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
