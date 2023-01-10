@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
-    Button btnMotivation, btnToDoList, btnHabit, btnMood, btnQuiz, btnHelpline, btnBreathing, btnYoga, btnMusic, btnEmergency;
+    Button btnMotivation, btnToDoList, btnHabit, btnMood, btnMusic;
     String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
