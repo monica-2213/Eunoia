@@ -73,7 +73,6 @@ public class recommendation extends Fragment{
                 }
             };
         BtnMusic.setOnClickListener(OCLmusic);
-
     }
 }
 

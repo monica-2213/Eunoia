@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/img_1">
 
     <EditText
         android:id="@+id/TaskName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins"
         android:hint="Enter task name"
         android:minHeight="48dp"
@@ -23,12 +22,12 @@
         android:id="@+id/TaskDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/poppins"
         android:hint="Enter task description"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TaskName" />
 
@@ -36,7 +35,7 @@
         android:id="@+id/Save"
         android:layout_width="146dp"
         android:layout_height="49dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/button1"
         android:fontFamily="@font/raleway_semibold"
         android:text="Save"

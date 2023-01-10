@@ -28,7 +28,8 @@ public class HomeActivity extends AppCompatActivity {
         btnMotivation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), RecomendationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MotivationActivity.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });
@@ -47,6 +48,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), TrackerActivity.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });

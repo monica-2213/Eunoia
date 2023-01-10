@@ -22,7 +22,7 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
     Button ans1,ans2,ans3,ans4;
     Button submitBtn;
 
-    int score   =0;
+    int score=0;
     int totalQuestion = QuestionsAnswer.question.length;
     int currentQuestionIndex = 0;
     String selectedAnswer = "";
