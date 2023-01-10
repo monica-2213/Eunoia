@@ -152,7 +152,7 @@
         app:layout_constraintTop_toBottomOf="@+id/TVStep5" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/BtnYoutubeLink"
+        android:id="@+id/BtnYoutubeLink3"
         android:layout_width="174dp"
         android:layout_height="54dp"
         android:layout_marginTop="720dp"

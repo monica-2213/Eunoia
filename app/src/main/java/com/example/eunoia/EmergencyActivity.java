@@ -43,11 +43,11 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
 
 
 
-        textview = findViewById(R.id.TVContact1);
+        textview = findViewById(R.id.TVTalianKasih1);
         numview = findViewById(R.id.number1);
-        textview2 = findViewById(R.id.TVContact2);
-        numview2 = findViewById(R.id.number2);
-        textview3 = findViewById(R.id.TVContact3);
+        textview2 = findViewById(R.id.TVBefrienders2);
+        numview2 = findViewById(R.id.email2);
+        textview3 = findViewById(R.id.TVThriveWell2);
         numview3 = findViewById(R.id.number3);
 
         SharedPreferences sp = getApplicationContext().getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);

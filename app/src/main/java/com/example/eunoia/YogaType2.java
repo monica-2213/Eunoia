@@ -1,12 +1,17 @@
 package com.example.eunoia;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,5 +65,20 @@ public class YogaType2 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_yoga_type2, container, false);
+    }
+
+
+
+    //Tutorial Button will redirect with Youtube Link (YogaType2)
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        Button BtnYouTubeLink2 = view.findViewById(R.id.BtnYoutubeLink2);
+        BtnYouTubeLink2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("https://www.youtube.com/watch?v=3ccamYgDXHI");
+                startActivity(new Intent(Intent.ACTION_VIEW,uri));
+            }
+        });
     }
 }

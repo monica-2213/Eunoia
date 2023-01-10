@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="40dp">
+        android:layout_margin="10sp"
+        android:rowCount="5"
+        android:columnCount="1">
 
         <Button
-            android:id="@+id/BtnMotivation"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginBottom="10dp"
-            android:drawableLeft="@drawable/ic_motivation2"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="MOTIVATION"
-            android:textSize="16sp" />
+            android:id="@+id/btnMotivation"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Motivation" />
 
         <Button
-            android:id="@+id/BtnHelpline"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="HELPLINE"
-            android:textSize="16sp" />
+            android:id="@+id/btnTracker"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Tracker" />
 
         <Button
-            android:id="@+id/BtnBreathing"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="BREATHING EXERCISE"
-            android:textSize="16sp" />
+            android:id="@+id/btnRecommendation"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Recommendation" />
 
         <Button
-            android:id="@+id/BtnMusic"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="MUSIC"
-            android:textSize="16sp" />
+            android:id="@+id/btnHelp"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Help" />
 
         <Button
-            android:id="@+id/BtnEmergency"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="EMERGENCY"
-            android:textSize="16sp" />
+            android:id="@+id/btnEmergency"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Emergency" />
 
-    </LinearLayout>
-</RelativeLayout>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

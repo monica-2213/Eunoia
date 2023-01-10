@@ -2,11 +2,14 @@ package com.example.eunoia;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,7 +17,7 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Yoga extends Fragment {
-
+     Button BtnYoga1,BtnYoga2,BtnYoga3;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -60,5 +63,38 @@ public class Yoga extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_yoga, container, false);
+    }
+    @Override
+    public void onViewCreated( View view, @Nullable Bundle savedInstanceState) {
+        //Calling YogaType1 Fragment from Yoga Fragment
+        BtnYoga1 = view.findViewById(R.id.BtnYoga1);
+        View.OnClickListener OCLYoga1 = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.DesyogaType1);
+            }
+        };
+        BtnYoga1.setOnClickListener(OCLYoga1);
+
+        //Calling YogaType2 Fragment from Yoga Fragment
+        BtnYoga2 = view.findViewById(R.id.BtnYoga2);
+        View.OnClickListener OCLYoga2 = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.DesyogaType2);
+            }
+        };
+        BtnYoga2.setOnClickListener(OCLYoga2);
+
+        //Calling YogaType3 Fragment from Yoga Fragment
+        BtnYoga3 = view.findViewById(R.id.BtnYoga3);
+        View.OnClickListener OCLYoga3 = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.DesyogaType3);
+            }
+        };
+        BtnYoga3.setOnClickListener(OCLYoga3);
+
     }
 }

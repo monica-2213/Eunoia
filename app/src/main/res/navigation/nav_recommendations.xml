@@ -3,84 +3,84 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_recommendations"
-    app:startDestination="@id/recommendation">
+    app:startDestination="@id/DesRecommendation">
 
     <fragment
-        android:id="@+id/desBreathing_exercise"
+        android:id="@+id/DesBreathing_exercise"
         android:name="com.example.eunoia.breathing_exercise"
         android:label="fragment_breathing_exercise"
         tools:layout="@layout/fragment_breathing_exercise" >
         <action
             android:id="@+id/action_breathing_exercise_to_breathingType3"
-            app:destination="@id/breathingType3" />
+            app:destination="@id/DesbreathingType3" />
         <action
             android:id="@+id/action_breathing_exercise_to_breathingType2"
-            app:destination="@id/breathingType2" />
+            app:destination="@id/DesbreathingType2" />
         <action
             android:id="@+id/action_breathing_exercise_to_breathingType1"
-            app:destination="@id/breathingType1" />
+            app:destination="@id/DesbreathingType1" />
     </fragment>
     <fragment
-        android:id="@+id/breathingType1"
+        android:id="@+id/DesbreathingType1"
         android:name="com.example.eunoia.BreathingType1"
         android:label="fragment_breathing_type1"
         tools:layout="@layout/fragment_breathing_type1" />
     <fragment
-        android:id="@+id/breathingType2"
+        android:id="@+id/DesbreathingType2"
         android:name="com.example.eunoia.BreathingType2"
         android:label="fragment_breathing_type3"
         tools:layout="@layout/fragment_breathing_type3" />
     <fragment
-        android:id="@+id/music"
+        android:id="@+id/DesMusic"
         android:name="com.example.eunoia.music"
         android:label="fragment_music"
-        tools:layout="@layout/fragment_music" />
+        tools:layout="@layout/fragment_music"/>
     <fragment
-        android:id="@+id/recommendation"
+        android:id="@+id/DesRecommendation"
         android:name="com.example.eunoia.recommendation"
         android:label="fragment_recommendation"
         tools:layout="@layout/fragment_recommendation" >
         <action
             android:id="@+id/action_recommendation_to_yoga"
-            app:destination="@id/yoga" />
+            app:destination="@id/Desyoga" />
         <action
             android:id="@+id/action_recommendation_to_breathing_exercise2"
-            app:destination="@id/desBreathing_exercise" />
+            app:destination="@id/DesBreathing_exercise" />
         <action
             android:id="@+id/action_recommendation_to_music"
-            app:destination="@id/music" />
+            app:destination="@id/DesMusic" />
     </fragment>
     <fragment
-        android:id="@+id/yoga"
+        android:id="@+id/Desyoga"
         android:name="com.example.eunoia.Yoga"
         android:label="fragment_yoga"
         tools:layout="@layout/fragment_yoga" >
         <action
             android:id="@+id/action_yoga_to_yogaType3"
-            app:destination="@id/yogaType3" />
+            app:destination="@id/DesyogaType3" />
         <action
             android:id="@+id/action_yoga_to_yogaType2"
-            app:destination="@id/yogaType2" />
+            app:destination="@id/DesyogaType2" />
         <action
             android:id="@+id/action_yoga_to_yogaType1"
-            app:destination="@id/yogaType1" />
+            app:destination="@id/DesyogaType1" />
     </fragment>
     <fragment
-        android:id="@+id/yogaType1"
+        android:id="@+id/DesyogaType1"
         android:name="com.example.eunoia.YogaType1"
         android:label="fragment_yoga_type1"
         tools:layout="@layout/fragment_yoga_type1" />
     <fragment
-        android:id="@+id/yogaType2"
+        android:id="@+id/DesyogaType2"
         android:name="com.example.eunoia.YogaType2"
         android:label="fragment_yoga_type2"
         tools:layout="@layout/fragment_yoga_type2" />
     <fragment
-        android:id="@+id/breathingType3"
+        android:id="@+id/DesbreathingType3"
         android:name="com.example.eunoia.BreathingType3"
         android:label="BreathingType3" />
     <fragment
-        android:id="@+id/yogaType3"
+        android:id="@+id/DesyogaType3"
         android:name="com.example.eunoia.YogaType3"
         android:label="fragment_yoga_type3"
         tools:layout="@layout/fragment_yoga_type3" />

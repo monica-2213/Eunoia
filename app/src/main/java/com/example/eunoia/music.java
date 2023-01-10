@@ -61,4 +61,8 @@ public class music extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_music, container, false);
     }
+
+    //Spotify Button in the Music Button redirects with the Spotify Link
+    //AppleMusic Button in the Music Button redirects with the Apple Music Link
+
 }

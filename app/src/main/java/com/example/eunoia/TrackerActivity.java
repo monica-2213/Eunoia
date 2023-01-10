@@ -74,7 +74,10 @@ public class TrackerActivity extends AppCompatActivity implements NavigationView
                 break;
 
             case R.id.nav_recommendation:
-
+                Intent intentRecommend = new Intent(getApplicationContext(), RecomendationActivity.class);
+                intentRecommend.putExtra("username",username);
+                startActivity(intentRecommend);
+                finish();
                 break;
 
             case R.id.nav_emergency:

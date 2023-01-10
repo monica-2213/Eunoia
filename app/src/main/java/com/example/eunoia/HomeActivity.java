@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
-    Button btnMotivation, btnToDoList, btnHabit, btnMood, btnQuiz, btnHelpline, btnBreathing, btnYoga, btnMusic, btnEmergency;
+    Button btnMotivation, btnToDoList, btnHabit, btnMood, btnMusic;
     String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,34 +28,46 @@ public class HomeActivity extends AppCompatActivity {
         btnMotivation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), RecomendationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MotivationActivity.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });
 
-        btnToDoList = findViewById(R.id.btnToDoList);
+        btnToDoList = findViewById(R.id.btnTracker);
         btnToDoList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MotivationActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TrackerActivity.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });
 
-        btnHabit = findViewById(R.id.btnHabit);
+        btnHabit = findViewById(R.id.btnRecommendation);
         btnHabit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), TrackerActivity.class);
+                Intent intent = new Intent(getApplicationContext(), RecomendationActivity.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });
 
-        btnMood = findViewById(R.id.btnMood);
+        btnMood = findViewById(R.id.btnHelp);
         btnMood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), TrackerActivity.class);
+                Intent intent = new Intent(getApplicationContext(), null);
+                startActivity(intent);
+            }
+        });
+
+        btnMusic = findViewById(R.id.btnEmergency);
+        btnMusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), EmergencyActivity.class);
                 startActivity(intent);
             }
         });
