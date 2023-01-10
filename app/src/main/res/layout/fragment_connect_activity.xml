@@ -182,6 +182,7 @@
         android:layout_width="128dp"
         android:layout_height="51dp"
         android:backgroundTint="#FC7869"
+        android:fontFamily="@font/poppins_semibold"
         android:text="HELPLINE"
         app:cornerRadius="28dp"
         app:layout_constraintBottom_toBottomOf="parent"

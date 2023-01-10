@@ -12,25 +12,26 @@
         android:id="@+id/Number3"
         android:layout_width="218dp"
         android:layout_height="23dp"
-        android:layout_marginBottom="336dp"
         android:text="0189007247"
         android:textColor="#918D8D"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVThriveWell" />
 
     <TextView
         android:id="@+id/Number2"
         android:layout_width="218dp"
         android:layout_height="23dp"
-        android:layout_marginBottom="408dp"
+        android:layout_marginTop="2dp"
         android:text="0379568145"
         android:textColor="#918D8D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVBefrienders1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/TVThriveWell"
@@ -63,41 +64,13 @@
         app:layout_constraintVertical_bias="0.351" />
 
     <TextView
-        android:id="@+id/TVTalianKasih2"
-        android:layout_width="220dp"
-        android:layout_height="27dp"
-        android:fontFamily="@font/poppins"
-        android:text="Talian Kasih"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.738"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694" />
-
-    <TextView
-        android:id="@+id/Email1"
-        android:layout_width="218dp"
-        android:layout_height="23dp"
-        android:text="www.kpwkm.gov.my"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.73"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
-
-    <TextView
         android:id="@+id/TVHelpline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
         android:text="HELPLINE"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,11 +125,12 @@
         android:layout_width="218dp"
         android:layout_height="23dp"
         android:text="center@thethrive.center"
+        android:textAlignment="center"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.668"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TVThriveWell2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/TVThriveWell2"
         app:layout_constraintTop_toBottomOf="@+id/TVThriveWell2"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -164,15 +138,17 @@
         android:id="@+id/TVBefrienders2"
         android:layout_width="220dp"
         android:layout_height="27dp"
-        android:layout_marginTop="500dp"
         android:fontFamily="@font/poppins"
         android:text="Befreinders"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/ButtonCall4"
@@ -194,28 +170,28 @@
         android:layout_height="27dp"
         android:fontFamily="@font/poppins"
         android:text="Thrive Well"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.796"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.906" />
+        app:layout_constraintVertical_bias="0.901" />
 
     <TextView
         android:id="@+id/email2"
         android:layout_width="218dp"
         android:layout_height="23dp"
-        android:layout_marginTop="154dp"
-        android:layout_marginBottom="108dp"
         android:text="sam@befreinders.org.my"
         android:textColor="#000000"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.626"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
+        app:layout_constraintEnd_toEndOf="@+id/TVBefrienders2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TVBefrienders2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828" />
 
     <TextView
         android:id="@+id/TVTalianKasih1"
@@ -239,7 +215,7 @@
         android:fontFamily="@font/poppins_semibold"
         android:text="Emails"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -260,5 +236,34 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ButtonCall6" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/TVBefrienders2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/TVTalianKasih2"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:fontFamily="@font/poppins"
+            android:text="Talian Kasih"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Email1"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:text="www.kpwkm.gov.my"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

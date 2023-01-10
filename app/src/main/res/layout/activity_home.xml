@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/img_1"
     tools:context=".HomeActivity">
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10sp"
+        android:padding="40dp"
         android:rowCount="5"
         android:columnCount="1">
 
         <Button
+            android:drawableLeft="@drawable/fist"
+            android:drawableRight="@drawable/fist"
             android:id="@+id/btnMotivation"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
@@ -23,6 +27,8 @@
             android:text="Motivation" />
 
         <Button
+            android:drawableLeft="@drawable/track"
+            android:drawableRight="@drawable/track"
             android:id="@+id/btnTracker"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
@@ -32,6 +38,8 @@
             android:text="Tracker" />
 
         <Button
+            android:drawableLeft="@drawable/recicon"
+            android:drawableRight="@drawable/recicon"
             android:id="@+id/btnRecommendation"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
@@ -41,6 +49,8 @@
             android:text="Recommendation" />
 
         <Button
+            android:drawableLeft="@drawable/information"
+            android:drawableRight="@drawable/information"
             android:id="@+id/btnHelp"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
@@ -50,6 +60,8 @@
             android:text="Help" />
 
         <Button
+            android:drawableLeft="@drawable/emergency1"
+            android:drawableRight="@drawable/emergency1"
             android:id="@+id/btnEmergency"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"

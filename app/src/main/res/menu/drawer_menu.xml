@@ -9,21 +9,21 @@
             android:title="Home" />
         <item
             android:id="@+id/nav_motivation"
-            android:icon="@drawable/motivation"
+            android:icon="@drawable/fist1"
             android:title="Motivation" />
 
         <item
             android:id="@+id/nav_tracker"
-            android:icon="@drawable/tracker"
+            android:icon="@drawable/track1"
             android:title="Tracker" />
 
         <item
             android:id="@+id/nav_recommendation"
-            android:icon="@drawable/recommendation"
+            android:icon="@drawable/recicon1"
             android:title="Recommendation" />
         <item
             android:id="@+id/nav_help"
-            android:icon="@drawable/help"
+            android:icon="@drawable/information1"
             android:title="Help" />
 
         <item
