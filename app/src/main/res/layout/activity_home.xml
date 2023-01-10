@@ -1,41 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".HomeActivity"
-    tools:openDrawer="start"
-    android:id="@+id/drawerLayout">
+    tools:context=".HomeActivity">
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_margin="10sp"
+        android:rowCount="5"
+        android:columnCount="2">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:elevation="4dp"
-            >
-        </androidx.appcompat.widget.Toolbar>
+        <Button
+            android:id="@+id/btnMotivation"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Motivation" />
 
-        <FrameLayout
-            android:id="@+id/fragment_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-    </LinearLayout>
+        <Button
+            android:id="@+id/btnToDoList"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="To-Do List" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:id="@+id/nav_view"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/drawer_menu"
-        />
+        <Button
+            android:id="@+id/btnHabit"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Habit Tracker" />
 
-</androidx.drawerlayout.widget.DrawerLayout>
+        <Button
+            android:id="@+id/btnMood"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Mood Tracker" />
+
+        <Button
+            android:id="@+id/btnQuiz"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Quiz" />
+
+        <Button
+            android:id="@+id/btnHelpline"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Helpline" />
+
+        <Button
+            android:id="@+id/btnBreathing"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="13sp"
+            android:layout_margin="5sp"
+            android:text="Breathing Exercise" />
+
+        <Button
+            android:id="@+id/btnYoga"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="13sp"
+            android:layout_margin="5sp"
+            android:text="Yoga Exercise" />
+
+        <Button
+            android:id="@+id/btnMusic"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Music" />
+
+        <Button
+            android:id="@+id/btnEmergency"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="16sp"
+            android:layout_margin="5sp"
+            android:text="Emergency" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
