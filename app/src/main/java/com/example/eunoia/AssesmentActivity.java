@@ -1,58 +1,110 @@
 package com.example.eunoia;
 
+import android.app.AlertDialog;
+import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link AssesmentActivity#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class AssesmentActivity extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+public class AssesmentActivity extends AppCompatActivity implements View.OnClickListener {
 
-    public AssesmentActivity() {
-        // Required empty public constructor
-    }
+    TextView totalQuestionsTextView;
+    TextView questionTextView;
+    Button ans1,ans2,ans3,ans4;
+    Button submitBtn;
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment AssesmentActivity.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static AssesmentActivity newInstance(String param1, String param2) {
-        AssesmentActivity fragment = new AssesmentActivity();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    int score   =0;
+    int totalQuestion = QuestionsAnswer.question.length;
+    int currentQuestionIndex = 0;
+    String selectedAnswer = "";
+
+
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+        setContentView(R.layout.fragment_assesment_activity);
+        setContentView(R.layout.activity_main);
+
+        totalQuestionsTextView = findViewById(R.id.TVTitle);
+        questionTextView = findViewById(R.id.textView2);
+        ans1 = findViewById(R.id.BtnAns1);
+        ans2 = findViewById(R.id.BtnAns2);
+        ans3 = findViewById(R.id.BtnAns3);
+        submitBtn = findViewById(R.id.SubmitBtn);
+
+        ans1.setOnClickListener(this);
+        ans2.setOnClickListener(this);
+        ans3.setOnClickListener(this);
+        submitBtn.setOnClickListener(this);
+
+        totalQuestionsTextView.setText("Total questions:" + totalQuestion);
+
+        loadNewQuestion();
+    }
+
+    public void onClick(View view) {
+        ans1.setBackgroundColor(Color.WHITE);
+        ans2.setBackgroundColor(Color.WHITE);
+        ans3.setBackgroundColor(Color.WHITE);
+
+
+        Button clickedButton = (Button) view;
+        if(clickedButton.getId()==R.id.SubmitBtn){
+            if (selectedAnswer.equals(QuestionsAnswer.correctAnswers[currentQuestionIndex])){
+                score++;
+            }
+            currentQuestionIndex++;
+            loadNewQuestion();
+        }else{
+            //choices button clicked
+            selectedAnswer= clickedButton.getText().toString();
+            clickedButton.setBackgroundColor(Color.MAGENTA);
         }
+    }
+
+    void loadNewQuestion(){
+
+        if (currentQuestionIndex==totalQuestion){
+            finishQuiz();
+            return;
+        }
+
+        questionTextView.setText(QuestionsAnswer.question[currentQuestionIndex]);
+        ans1.setText(QuestionsAnswer.choice[currentQuestionIndex][0]);
+        ans2.setText(QuestionsAnswer.choice[currentQuestionIndex][1]);
+        ans3.setText(QuestionsAnswer.choice[currentQuestionIndex][2]);
+    }
+    void finishQuiz(){
+        String passStatus ="";
+        if (score>totalQuestion*0.60){
+            passStatus = "Passed";
+        }else{
+            passStatus = "Failed";
+        }
+
+        new AlertDialog.Builder(this)
+                .setTitle(passStatus)
+                .setMessage("Score is "+ score+" out of "+ totalQuestion)
+                .setPositiveButton("Restart",(dialogInterface, i) -> restartQuiz() )
+                .setCancelable(false)
+                .show();
+    }
+
+    void restartQuiz(){
+        score=0;
+        currentQuestionIndex = 0;
+        loadNewQuestion();
+
     }
 
     @Override
