@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_margin="10sp"
         android:rowCount="5"
-        android:columnCount="2">
+        android:columnCount="1">
 
         <Button
             android:id="@+id/btnMotivation"
@@ -23,76 +23,31 @@
             android:text="Motivation" />
 
         <Button
-            android:id="@+id/btnToDoList"
+            android:id="@+id/btnTracker"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:textSize="16sp"
             android:layout_margin="5sp"
-            android:text="To-Do List" />
+            android:text="Tracker" />
 
         <Button
-            android:id="@+id/btnHabit"
+            android:id="@+id/btnRecommendation"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:textSize="16sp"
             android:layout_margin="5sp"
-            android:text="Habit Tracker" />
+            android:text="Recommendation" />
 
         <Button
-            android:id="@+id/btnMood"
+            android:id="@+id/btnHelp"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:textSize="16sp"
             android:layout_margin="5sp"
-            android:text="Mood Tracker" />
-
-        <Button
-            android:id="@+id/btnQuiz"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Quiz" />
-
-        <Button
-            android:id="@+id/btnHelpline"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Helpline" />
-
-        <Button
-            android:id="@+id/btnBreathing"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="13sp"
-            android:layout_margin="5sp"
-            android:text="Breathing Exercise" />
-
-        <Button
-            android:id="@+id/btnYoga"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="13sp"
-            android:layout_margin="5sp"
-            android:text="Yoga Exercise" />
-
-        <Button
-            android:id="@+id/btnMusic"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Music" />
+            android:text="Help" />
 
         <Button
             android:id="@+id/btnEmergency"

@@ -34,17 +34,8 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        btnToDoList = findViewById(R.id.btnToDoList);
+        btnToDoList = findViewById(R.id.btnTracker);
         btnToDoList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MotivationActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnHabit = findViewById(R.id.btnHabit);
-        btnHabit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), TrackerActivity.class);
@@ -53,38 +44,30 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        btnMood = findViewById(R.id.btnMood);
+        btnHabit = findViewById(R.id.btnRecommendation);
+        btnHabit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RecomendationActivity.class);
+                intent.putExtra("username",username);
+                startActivity(intent);
+            }
+        });
+
+        btnMood = findViewById(R.id.btnHelp);
         btnMood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), TrackerActivity.class);
+                Intent intent = new Intent(getApplicationContext(), null);
                 startActivity(intent);
             }
         });
 
-        btnMusic = findViewById(R.id.btnMusic);
+        btnMusic = findViewById(R.id.btnEmergency);
         btnMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), recommendation.class);
-                startActivity(intent);
-            }
-        });
-
-        btnBreathing = findViewById(R.id.btnBreathing);
-        btnBreathing.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), recommendation.class);
-                startActivity(intent);
-            }
-        });
-
-        btnYoga = findViewById(R.id.btnYoga);
-        btnYoga.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), recommendation.class);
+                Intent intent = new Intent(getApplicationContext(), EmergencyActivity.class);
                 startActivity(intent);
             }
         });
