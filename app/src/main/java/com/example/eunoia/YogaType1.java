@@ -61,4 +61,6 @@ public class YogaType1 extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_yoga_type1, container, false);
     }
+
+    //Tutorial Button will redirect with Youtube Link (YogaType1)
 }

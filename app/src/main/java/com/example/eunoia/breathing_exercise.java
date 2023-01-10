@@ -2,8 +2,10 @@ package com.example.eunoia;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +14,8 @@ import android.widget.Button;
 
 
 public class breathing_exercise extends Fragment {
+    Button BtnBreathe1, BtnBreathe2,BtnBreathe3;
+
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -55,5 +59,40 @@ public class breathing_exercise extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_breathing_exercise, container, false);
+    }
+
+
+    @Override
+    public void onViewCreated( View view, @Nullable Bundle savedInstanceState) {
+        //Calling BreathingType1 Fragment from Breathing_exercise Fragment
+        BtnBreathe1 = view.findViewById(R.id.BtnBreathe1);
+        View.OnClickListener OCLBreathe1 = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.DesbreathingType1);
+            }
+        };
+        BtnBreathe1.setOnClickListener(OCLBreathe1);
+
+        //Calling BreathingType2 Fragment from Breathing_exercise Fragment
+        BtnBreathe2= view.findViewById(R.id.BtnBreathe2);
+        View.OnClickListener OCLBreathe2 = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.DesbreathingType2);
+            }
+        };
+        BtnBreathe2.setOnClickListener(OCLBreathe2);
+
+        //Calling BreathingType3 Fragment from Breathing_exercise Fragment
+        BtnBreathe3 = view.findViewById(R.id.BtnBreathe3);
+        View.OnClickListener OCLBreathe3 = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.DesbreathingType3);
+            }
+        };
+        BtnBreathe3.setOnClickListener(OCLBreathe3);
+
     }
     }

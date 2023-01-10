@@ -62,9 +62,9 @@ public class recommendation extends Fragment{
         return inflater.inflate(R.layout.fragment_recommendation, container, false);
     }
 
-
     @Override
     public void onViewCreated( View view, @Nullable Bundle savedInstanceState) {
+        //Calling Music Fragment from Recommendation Fragment
         BtnMusic = view.findViewById(R.id.BtnMusic);
         View.OnClickListener OCLmusic =new View.OnClickListener() {
                 @Override
@@ -73,6 +73,26 @@ public class recommendation extends Fragment{
                 }
             };
         BtnMusic.setOnClickListener(OCLmusic);
+
+        //Calling Yoga Fragment from Recommendation Fragment
+        BtnYoga = view.findViewById(R.id.BtnYoga);
+        View.OnClickListener OCLYoga =new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.Desyoga);
+            }
+        };
+        BtnYoga.setOnClickListener(OCLYoga);
+
+        //Calling Breathing Fragment from Recommendation Fragment
+        BtnBreathing = view.findViewById(R.id.BtnBreathing);
+        View.OnClickListener OCLBreathing =new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.DesBreathing_exercise);
+            }
+        };
+        BtnBreathing.setOnClickListener(OCLBreathing);
     }
 }
 
