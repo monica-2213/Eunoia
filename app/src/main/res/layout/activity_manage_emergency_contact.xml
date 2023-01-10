@@ -24,7 +24,7 @@
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Name #3"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/emergencyContactName3"
@@ -43,7 +43,7 @@
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Number #3"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/emergencyContactNumber3"
@@ -72,7 +72,7 @@
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Name #2"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/emergencyContactName2"
@@ -91,7 +91,7 @@
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Number #2"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/emergencyContactNumber2"
@@ -120,7 +120,7 @@
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Name #1"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/emergencyContactName"
@@ -140,7 +140,7 @@
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Number #1"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/emergencyContactNumber"
@@ -176,7 +176,7 @@
         android:fontFamily="@font/poppins_semibold"
         android:text="MANAGE EMERGENCY CONTACTS"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

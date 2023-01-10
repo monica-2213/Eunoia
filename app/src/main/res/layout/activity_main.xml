@@ -18,9 +18,11 @@
         android:fontFamily="@font/bad_script"
         android:textStyle="bold"
         android:text="EUNOIA"
+        android:textColor="#9C9999"
         android:textSize="36sp" />
 
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/email1"
         android:layout_width="243dp"
         android:layout_height="wrap_content"
@@ -37,6 +39,7 @@
         android:padding="10dp" />
 
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/password1"
         android:layout_width="243dp"
         android:layout_height="wrap_content"

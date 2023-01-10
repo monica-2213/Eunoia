@@ -21,7 +21,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="EXTENDED PUPPY POSE"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/BtnYoga2"

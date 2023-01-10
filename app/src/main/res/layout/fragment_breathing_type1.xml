@@ -52,7 +52,7 @@
     <TextView
         android:id="@+id/TVStep2"
         android:layout_width="373dp"
-        android:layout_height="97dp"
+        android:layout_height="100dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"

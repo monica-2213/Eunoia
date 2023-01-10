@@ -88,7 +88,7 @@
         android:fontFamily="@font/poppins"
         android:text="Select keyword to describe your feeling"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +115,7 @@
         android:fontFamily="@font/poppins"
         android:text="What is making you feel that way?"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +124,7 @@
 
     <EditText
         android:id="@+id/description"
-        android:layout_width="352dp"
+        android:layout_width="305dp"
         android:layout_height="48dp"
         android:ems="10"
         android:fontFamily="@font/poppins"

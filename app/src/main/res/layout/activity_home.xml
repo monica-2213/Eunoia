@@ -1,108 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10sp"
-        android:rowCount="5"
-        android:columnCount="2">
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
 
         <Button
-            android:id="@+id/btnMotivation"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Motivation" />
+            android:id="@+id/BtnMotivation"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_motivation2"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="MOTIVATION"
+            android:textSize="16sp" />
 
         <Button
-            android:id="@+id/btnToDoList"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="To-Do List" />
+            android:id="@+id/BtnHelpline"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="HELPLINE"
+            android:textSize="16sp" />
 
         <Button
-            android:id="@+id/btnHabit"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Habit Tracker" />
+            android:id="@+id/BtnBreathing"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="BREATHING EXERCISE"
+            android:textSize="16sp" />
 
         <Button
-            android:id="@+id/btnMood"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Mood Tracker" />
+            android:id="@+id/BtnMusic"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="MUSIC"
+            android:textSize="16sp" />
 
         <Button
-            android:id="@+id/btnQuiz"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Quiz" />
+            android:id="@+id/BtnEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="EMERGENCY"
+            android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/btnHelpline"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Helpline" />
-
-        <Button
-            android:id="@+id/btnBreathing"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="13sp"
-            android:layout_margin="5sp"
-            android:text="Breathing Exercise" />
-
-        <Button
-            android:id="@+id/btnYoga"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="13sp"
-            android:layout_margin="5sp"
-            android:text="Yoga Exercise" />
-
-        <Button
-            android:id="@+id/btnMusic"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Music" />
-
-        <Button
-            android:id="@+id/btnEmergency"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Emergency" />
-
-    </GridLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_1">
+    android:background="@drawable/img_1"
+    android:padding="35dp">
 
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/TaskName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,15 +22,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:textColor="@color/black"
         android:id="@+id/TaskDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/poppins"
         android:hint="Enter task description"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TaskName" />
 
@@ -36,13 +38,13 @@
         android:id="@+id/Save"
         android:layout_width="146dp"
         android:layout_height="49dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/button1"
         android:fontFamily="@font/raleway_semibold"
         android:text="Save"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.984"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TaskDesc" />
 
