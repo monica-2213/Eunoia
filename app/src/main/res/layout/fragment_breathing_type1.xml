@@ -52,7 +52,7 @@
     <TextView
         android:id="@+id/TVStep2"
         android:layout_width="373dp"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
@@ -76,7 +76,7 @@
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
-        android:text=" 1. Sit quietly somewhere you don’t need to give any   tasks your full attention."
+        android:text=" 1. Sit quietly somewhere you don’t need to give any tasks your full attention."
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -89,7 +89,7 @@
     <TextView
         android:id="@+id/TVStep3"
         android:layout_width="374dp"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
@@ -106,7 +106,7 @@
     <TextView
         android:id="@+id/TVStep4"
         android:layout_width="374dp"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
@@ -123,7 +123,7 @@
     <TextView
         android:id="@+id/TVStep5"
         android:layout_width="374dp"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"

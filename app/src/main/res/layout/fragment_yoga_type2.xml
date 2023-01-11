@@ -59,7 +59,7 @@
     <TextView
         android:id="@+id/TVStep2"
         android:layout_width="374dp"
-        android:layout_height="68dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
@@ -110,7 +110,7 @@
     <TextView
         android:id="@+id/TVStep5"
         android:layout_width="374dp"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"

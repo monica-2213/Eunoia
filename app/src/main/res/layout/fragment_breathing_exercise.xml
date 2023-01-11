@@ -19,7 +19,7 @@
             android:layout_height="104dp"
             android:backgroundTint="@color/soft_purple"
             android:fontFamily="@font/poppins_semibold"
-            android:text="ALTERNATE-NOSTRIL BREATHING"
+            android:text="ALTERNATE-NOSTRIL\nBREATHING"
             android:textSize="24sp"
             android:textStyle="bold" />
 
