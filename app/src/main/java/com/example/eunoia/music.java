@@ -1,12 +1,17 @@
 package com.example.eunoia;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -63,6 +68,25 @@ public class music extends Fragment {
     }
 
     //Spotify Button in the Music Button redirects with the Spotify Link
-    //AppleMusic Button in the Music Button redirects with the Apple Music Link
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        Button BtnSpotifyLink = view.findViewById(R.id.BtnSpotify);
+        BtnSpotifyLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("https://open.spotify.com/playlist/7EEbnnS7Zt1fGvTOjLL6Ry?si=er4VFxs_Q9akOXK5P-Xlmg");
+                startActivity(new Intent(Intent.ACTION_VIEW,uri));
+            }
+        });
 
-}
+            //AppleMusic Button in the Music Button redirects with the Apple Music Link
+            Button BtnAppleMusic = view.findViewById(R.id.BtnApple);
+            BtnAppleMusic.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uri = Uri.parse("https://music.apple.com/my/playlist/eunoia/pl.u-d2b05dXtLgkW052");
+                    startActivity(new Intent(Intent.ACTION_VIEW,uri));
+                }
+            });
+        }
+    }
