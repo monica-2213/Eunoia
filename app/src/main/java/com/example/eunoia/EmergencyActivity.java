@@ -1,8 +1,11 @@
 package com.example.eunoia;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -25,6 +30,8 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
     private DrawerLayout drawer;
     TextView textview, numview, textview2, numview2, textview3, numview3;
     Button btnManageEm;
+    Button call1,call2,call3;
+    static int PERMISSION_CODE = 100;
     private static final String SHARED_PREF_NAME = "Eunoia";
     private static final String CONTACT_NAME = "EmergencyName";
     private static final String CONTACT_NUMBER = "EmergencyNumber";
@@ -41,14 +48,23 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        if(ContextCompat.checkSelfPermission(EmergencyActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(EmergencyActivity.this, new String[]{Manifest.permission.CALL_PHONE},PERMISSION_CODE);
+        }
 
         textview = findViewById(R.id.TVTalianKasih1);
         numview = findViewById(R.id.number1);
         textview2 = findViewById(R.id.TVBefrienders2);
-        numview2 = findViewById(R.id.email2);
+        numview2 = findViewById(R.id.number2);
         textview3 = findViewById(R.id.TVThriveWell2);
         numview3 = findViewById(R.id.number3);
+
+        call1 = findViewById(R.id.ButtonCall4);
+        call2 = findViewById(R.id.ButtonCall5);
+        call3 = findViewById(R.id.ButtonCall5);
+
+
+
 
         SharedPreferences sp = getApplicationContext().getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
@@ -73,6 +89,36 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
                 Intent intent = new Intent(EmergencyActivity.this, ManageEmergencyContactsActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+        call1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick(View v){
+
+                String phoneNo = numview.getText().toString();
+                Intent i = new Intent(Intent.ACTION_CALL);
+                i.setData(Uri.parse("tel:"+phoneNo));
+                startActivity(i);
+            }
+        });
+        call2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick(View v){
+
+                String phoneNo = numview2.getText().toString();
+                Intent i = new Intent(Intent.ACTION_CALL);
+                i.setData(Uri.parse("tel:"+phoneNo));
+                startActivity(i);
+            }
+        });
+        call3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick(View v){
+
+                String phoneNo = numview3.getText().toString();
+                Intent i = new Intent(Intent.ACTION_CALL);
+                i.setData(Uri.parse("tel:"+phoneNo));
+                startActivity(i);
             }
         });
 
