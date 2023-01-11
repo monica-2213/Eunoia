@@ -52,11 +52,11 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
             ActivityCompat.requestPermissions(EmergencyActivity.this, new String[]{Manifest.permission.CALL_PHONE},PERMISSION_CODE);
         }
 
-        textview = findViewById(R.id.TVTalianKasih1);
+        textview = findViewById(R.id.ContactName1);
         numview = findViewById(R.id.number1);
-        textview2 = findViewById(R.id.TVBefrienders2);
+        textview2 = findViewById(R.id.ContactName2);
         numview2 = findViewById(R.id.number2);
-        textview3 = findViewById(R.id.TVThriveWell2);
+        textview3 = findViewById(R.id.ContactName3);
         numview3 = findViewById(R.id.number3);
 
         call1 = findViewById(R.id.ButtonCall4);

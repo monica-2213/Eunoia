@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.275" />
 
     <TextView
-        android:id="@+id/TVTalianKasih1"
+        android:id="@+id/ContactName1"
         android:layout_width="220dp"
         android:layout_height="27dp"
         android:fontFamily="@font/poppins"
@@ -71,14 +71,14 @@
         app:layout_constraintVertical_bias="0.519" />
 
     <TextView
-        android:id="@+id/TVBefrienders2"
+        android:id="@+id/ContactName2"
         android:layout_width="220dp"
         android:layout_height="27dp"
         android:fontFamily="@font/poppins"
         android:text="Mom"
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/TVThriveWell2"
+        app:layout_constraintBottom_toTopOf="@+id/ContactName3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVBefrienders2"
+        app:layout_constraintTop_toBottomOf="@+id/ContactName2"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -108,11 +108,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVThriveWell2"
+        app:layout_constraintTop_toBottomOf="@+id/ContactName3"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/TVThriveWell2"
+        android:id="@+id/ContactName3"
         android:layout_width="219dp"
         android:layout_height="27dp"
         android:fontFamily="@font/poppins"
