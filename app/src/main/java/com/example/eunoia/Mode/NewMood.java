@@ -105,7 +105,7 @@ public class NewMood extends Fragment {
         Calendar calendar = Calendar.getInstance();
         currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
 
-        SimpleDateFormat sdf = new SimpleDateFormat("h:mm RecyclerViewTouchHelper");
+        SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");
         currentTime = sdf.format(calendar.getTime());
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
