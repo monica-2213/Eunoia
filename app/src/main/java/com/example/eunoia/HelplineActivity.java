@@ -32,7 +32,8 @@ public class HelplineActivity extends AppCompatActivity{
                 String EmailLifeLine = binding.LifeLineEmail.getText().toString();
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setData(Uri.parse("mailto:"));
-                intent.putExtra(Intent.EXTRA_EMAIL,EmailLifeLine);
+                String[] addresses = EmailLifeLine.split(",");
+                intent.putExtra(Intent.EXTRA_EMAIL,addresses);
 
                 if(intent.resolveActivity(getPackageManager()) != null){
                     startActivity(intent);
