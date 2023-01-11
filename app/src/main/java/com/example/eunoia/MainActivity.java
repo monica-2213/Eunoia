@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 Cursor cursor = dbHelper.getUsername(emailUser);
                 cursor.moveToNext();
                 username = cursor.getString(2);
+                cursor.close();
 
 
                 if(dbHelper.isLoginValid(emailUser, passwordUser)) {

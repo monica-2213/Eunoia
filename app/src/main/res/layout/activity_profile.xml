@@ -1,100 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ProfileActivity"
-    android:paddingTop="120dp"
-    android:background="@drawable/img_1">
+    android:background="@drawable/img_1"
+    android:fitsSystemWindows="true"
+    tools:openDrawer=""
+    android:id="@+id/drawerLayout">
 
-    <EditText
-        android:id="@+id/name"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/person"
-        android:editable="false"
-        android:fontFamily="@font/work_sans_medium"
-        android:hint="     Name"
-        android:minHeight="48dp"
-        android:paddingLeft="40dp"
-        android:paddingBottom="30dp"
-        android:textColor="#9C9999"
-        android:textSize="20sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:textColor="#9C9999"
-        android:paddingBottom="30dp"
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/email"
-        android:editable="false"
-        android:fontFamily="@font/work_sans_medium"
-        android:hint="     Email"
-        android:minHeight="48dp"
-        android:paddingLeft="40dp"
-        android:textSize="20sp" />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            >
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
-    <EditText
-        android:textColor="#9C9999"
-        android:id="@+id/password"
-        android:paddingBottom="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/key"
-        android:editable="false"
-        android:fontFamily="@font/work_sans_medium"
-        android:hint="     Password"
-        android:minHeight="48dp"
-        android:paddingLeft="40dp"
-        android:textSize="20sp" />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="92dp"
+                android:drawableLeft="@drawable/person"
+                android:editable="false"
+                android:fontFamily="@font/work_sans_medium"
+                android:hint="     Name"
+                android:minHeight="48dp"
+                android:paddingLeft="40dp"
+                android:paddingBottom="30dp"
+                android:textColor="#9C9999"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:drawableLeft="@drawable/email"
+                android:editable="false"
+                android:fontFamily="@font/work_sans_medium"
+                android:hint="     Email"
+                android:minHeight="48dp"
+                android:paddingLeft="40dp"
+                android:paddingBottom="30dp"
+                android:textColor="#9C9999"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
 
-    <EditText
-        android:textColor="#9C9999"
-        android:id="@+id/dateOfBirth"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/calendar"
-        android:editable="false"
-        android:fontFamily="@font/work_sans_medium"
-        android:hint="     Date of Birth"
-        android:minHeight="48dp"
-        android:paddingLeft="40dp"
-        android:paddingBottom="30dp"
-        android:textSize="20sp" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:drawableLeft="@drawable/key"
+                android:editable="false"
+                android:fontFamily="@font/work_sans_medium"
+                android:hint="     Password"
+                android:minHeight="48dp"
+                android:paddingLeft="40dp"
+                android:paddingBottom="30dp"
+                android:textColor="#9C9999"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
 
+            <EditText
+                android:id="@+id/dateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:drawableLeft="@drawable/calendar"
+                android:editable="false"
+                android:fontFamily="@font/work_sans_medium"
+                android:hint="     Date of Birth"
+                android:minHeight="48dp"
+                android:paddingLeft="40dp"
+                android:paddingBottom="30dp"
+                android:textColor="#9C9999"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <EditText
-        android:textColor="#9C9999"
-        android:id="@+id/gender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/face"
-        android:editable="false"
-        android:fontFamily="@font/work_sans_medium"
-        android:hint="     Gender"
-        android:minHeight="48dp"
-        android:paddingLeft="40dp"
-        android:paddingBottom="30dp"
-        android:textSize="20sp" />
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:drawableLeft="@drawable/face"
+                android:editable="false"
+                android:fontFamily="@font/work_sans_medium"
+                android:hint="     Gender"
+                android:minHeight="48dp"
+                android:paddingLeft="40dp"
+                android:paddingBottom="30dp"
+                android:textColor="#9C9999"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateOfBirth" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLogout"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/button1"
-        android:text="Logout"
-        android:textColor="@color/white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-</LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_home"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

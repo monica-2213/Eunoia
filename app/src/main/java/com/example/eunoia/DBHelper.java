@@ -96,4 +96,10 @@ public class DBHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
+    public Cursor getAllInfo(String name){
+        SQLiteDatabase database = this.getReadableDatabase();
+        Cursor cursor = database.rawQuery("Select * from user where name = ?", new String[] {name});
+        return cursor;
+    }
+
 }
