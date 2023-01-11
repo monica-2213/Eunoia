@@ -61,6 +61,7 @@ public class ManageEmergencyContactsActivity extends AppCompatActivity {
                 editor.commit();
                 Intent intent1 = new Intent(ManageEmergencyContactsActivity.this,EmergencyActivity.class);
                 startActivity(intent1);
+                finish();
             }
         });
 
@@ -69,9 +70,13 @@ public class ManageEmergencyContactsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ManageEmergencyContactsActivity.this,EmergencyActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 }
