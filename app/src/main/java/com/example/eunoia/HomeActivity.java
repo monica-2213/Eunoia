@@ -58,7 +58,8 @@ public class HomeActivity extends AppCompatActivity {
         btnMood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), null);
+                Intent intent = new Intent(getApplicationContext(), Help.class);
+                intent.putExtra("username",username);
                 startActivity(intent);
             }
         });
