@@ -5,32 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResetActivity"
+    android:background="@drawable/img_1"
     android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/eunoiaicon" />
 
     <TextView
         android:id="@+id/username_reset_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="40dp"
         android:textSize="20dp"
-        android:text="Reset Password"/>
+        android:text="Reset Password"
+        android:fontFamily="@font/poppins_semibold"/>
 
     <EditText
         android:id="@+id/passwordReset"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="40dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/button4"
+        android:fontFamily="@font/poppins"
         android:hint="Enter new password"
         android:inputType="textPassword"
         android:layout_below="@id/username_reset_text"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnConfirm"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Confirm Password"
-        android:textSize="20dp"
         android:layout_below="@id/passwordReset"
-        android:layout_marginTop="50dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Confirm Password"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_reset_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/poppins"
+        android:text="Please enter your new password to reset the old password."
+        android:textSize="14sp" />
 
 </RelativeLayout>
