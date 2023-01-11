@@ -61,7 +61,7 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
 
         call1 = findViewById(R.id.ButtonCall4);
         call2 = findViewById(R.id.ButtonCall5);
-        call3 = findViewById(R.id.ButtonCall5);
+        call3 = findViewById(R.id.ButtonCall6);
 
 
 
