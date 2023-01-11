@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnLogin1, btnSignUp1;
     DBHelper dbHelper;
     String username;
+    TextView btnForgot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
                                           }
                                       }
         );
+        
+        btnForgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
