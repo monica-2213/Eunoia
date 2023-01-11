@@ -42,5 +42,39 @@ public class HelplineActivity extends AppCompatActivity{
                 }
             }
         });
+
+        binding.BtnEmailBef.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                String EmailBefrienders = binding.BefriendersEmail.getText().toString();
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:"));
+                String[] addresses = EmailBefrienders.split(",");
+                intent.putExtra(Intent.EXTRA_EMAIL,addresses);
+
+                if(intent.resolveActivity(getPackageManager()) != null){
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(HelplineActivity.this, "No App is Installed", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        binding.BtnEmailTW.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                String EmailThriveWell = binding.ThriveWellEmail.getText().toString();
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:"));
+                String[] addresses = EmailThriveWell.split(",");
+                intent.putExtra(Intent.EXTRA_EMAIL,addresses);
+
+                if(intent.resolveActivity(getPackageManager()) != null){
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(HelplineActivity.this, "No App is Installed", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }
