@@ -101,5 +101,19 @@ public class DBHelper extends SQLiteOpenHelper {
         Cursor cursor = database.rawQuery("Select * from user where name = ?", new String[] {name});
         return cursor;
     }
+    
+    public Boolean updatePassword(String email, String password){
+        SQLiteDatabase database = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("email", email);
+        contentValues.put("password", password);
+        long result = database.update("user", contentValues, "email = ?", new String[] {email});
+        if(result == -1){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
 
 }
