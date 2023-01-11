@@ -16,11 +16,11 @@
         <Button
             android:id="@+id/BtnBreathe1"
             android:layout_width="316dp"
-            android:layout_height="104dp"
+            android:layout_height="wrap_content"
             android:backgroundTint="@color/soft_purple"
             android:fontFamily="@font/poppins_semibold"
             android:text="ALTERNATE-NOSTRIL\nBREATHING"
-            android:textSize="24sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <Button
