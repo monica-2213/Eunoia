@@ -14,14 +14,16 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:background="@color/white">
+
         <CheckBox
+            android:id="@+id/mCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/black"
-            android:id="@+id/mCheckBox"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="8dp"
             android:text="This is task 1"
-            android:textColor="@color/black"
-            android:paddingStart="8dp"/>
+            android:textColor="@color/black" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
