@@ -32,7 +32,7 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_assesment_activity);
+        setContentView(R.layout.activity_assesment);
         setContentView(R.layout.activity_main);
 
         totalQuestionsTextView = findViewById(R.id.TVTitle);
