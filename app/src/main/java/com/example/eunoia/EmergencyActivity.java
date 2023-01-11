@@ -1,8 +1,11 @@
 package com.example.eunoia;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -22,9 +27,12 @@ import com.google.android.material.navigation.NavigationView;
 
 public class EmergencyActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
+    private String username;
     private DrawerLayout drawer;
     TextView textview, numview, textview2, numview2, textview3, numview3;
     Button btnManageEm;
+    Button call1,call2,call3;
+    static int PERMISSION_CODE = 100;
     private static final String SHARED_PREF_NAME = "Eunoia";
     private static final String CONTACT_NAME = "EmergencyName";
     private static final String CONTACT_NUMBER = "EmergencyNumber";
@@ -38,17 +46,34 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency);
 
+        Bundle extras = getIntent().getExtras();
+
+        if(extras!=null){
+            username = extras.getString("username");
+        }else {
+            username = "decoy";
+        }
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        if(ContextCompat.checkSelfPermission(EmergencyActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(EmergencyActivity.this, new String[]{Manifest.permission.CALL_PHONE},PERMISSION_CODE);
+        }
 
-
-        textview = findViewById(R.id.TVTalianKasih1);
+        textview = findViewById(R.id.ContactName1);
         numview = findViewById(R.id.number1);
-        textview2 = findViewById(R.id.TVBefrienders2);
-        numview2 = findViewById(R.id.email2);
-        textview3 = findViewById(R.id.TVThriveWell2);
+        textview2 = findViewById(R.id.ContactName2);
+        numview2 = findViewById(R.id.number2);
+        textview3 = findViewById(R.id.ContactName3);
         numview3 = findViewById(R.id.number3);
+
+        call1 = findViewById(R.id.ButtonCall4);
+        call2 = findViewById(R.id.ButtonCall5);
+        call3 = findViewById(R.id.ButtonCall6);
+
+
+
 
         SharedPreferences sp = getApplicationContext().getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
 
@@ -75,6 +100,36 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
                 finish();
             }
         });
+        call1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick(View v){
+
+                String phoneNo = numview.getText().toString();
+                Intent i = new Intent(Intent.ACTION_CALL);
+                i.setData(Uri.parse("tel:"+phoneNo));
+                startActivity(i);
+            }
+        });
+        call2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick(View v){
+
+                String phoneNo = numview2.getText().toString();
+                Intent i = new Intent(Intent.ACTION_CALL);
+                i.setData(Uri.parse("tel:"+phoneNo));
+                startActivity(i);
+            }
+        });
+        call3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick(View v){
+
+                String phoneNo = numview3.getText().toString();
+                Intent i = new Intent(Intent.ACTION_CALL);
+                i.setData(Uri.parse("tel:"+phoneNo));
+                startActivity(i);
+            }
+        });
 
         drawer = findViewById(R.id.drawerLayout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -95,21 +150,29 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
 
             case R.id.nav_motivation:
                 Intent intentMot = new Intent(getApplicationContext(), MotivationActivity.class);
+                intentMot.putExtra("username",username);
                 startActivity(intentMot);
                 finish();
                 break;
             case R.id.nav_tracker:
                 Intent intentTrack = new Intent(getApplicationContext(), TrackerActivity.class);
+                intentTrack.putExtra("username",username);
                 startActivity(intentTrack);
                 finish();
                 break;
 
             case R.id.nav_help:
-
+                Intent intentHelp = new Intent(getApplicationContext(), Help.class);
+                intentHelp.putExtra("username",username);
+                startActivity(intentHelp);
+                finish();
                 break;
 
             case R.id.nav_recommendation:
-
+                Intent intentRecommend = new Intent(getApplicationContext(), RecomendationActivity.class);
+                intentRecommend.putExtra("username",username);
+                startActivity(intentRecommend);
+                finish();
                 break;
 
             case R.id.nav_emergency:

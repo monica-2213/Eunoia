@@ -32,8 +32,7 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_assesment_activity);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_assesment);
 
         totalQuestionsTextView = findViewById(R.id.TVTitle);
         questionTextView = findViewById(R.id.textView2);
@@ -87,9 +86,9 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
     void finishQuiz(){
         String passStatus ="";
         if (score>totalQuestion*0.60){
-            passStatus = "Passed";
+            passStatus = "You have a high potential\nof having Depression";
         }else{
-            passStatus = "Failed";
+            passStatus = "Congrats, you failed the Depression test. Take care";
         }
 
         new AlertDialog.Builder(this)

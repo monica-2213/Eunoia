@@ -74,7 +74,10 @@ public class MotivationActivity extends AppCompatActivity implements NavigationV
                 break;
 
             case R.id.nav_help:
-
+                Intent intentHelp = new Intent(getApplicationContext(), Help.class);
+                intentHelp.putExtra("username",username);
+                startActivity(intentHelp);
+                finish();
                 break;
 
             case R.id.nav_recommendation:
@@ -85,7 +88,10 @@ public class MotivationActivity extends AppCompatActivity implements NavigationV
                 break;
 
             case R.id.nav_emergency:
-
+                Intent intentEmergency = new Intent(getApplicationContext(), EmergencyActivity.class);
+                intentEmergency.putExtra("username",username);
+                startActivity(intentEmergency);
+                finish();
                 break;
         }
 

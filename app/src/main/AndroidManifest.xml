@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -82,14 +83,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".EmergencyActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ManageEmergencyContactsActivity"
+            android:name=".HelplineActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -102,6 +96,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+        android:name=".Help"
+        android:exported="false">
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+    </activity>
 
         <meta-data
             android:name="preloaded_fonts"

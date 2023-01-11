@@ -52,7 +52,7 @@
     <TextView
         android:id="@+id/TVStep1"
         android:layout_width="370dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
@@ -70,7 +70,7 @@
     <TextView
         android:id="@+id/TVStep2"
         android:layout_width="370dp"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
@@ -87,7 +87,7 @@
     <TextView
         android:id="@+id/TVStep3"
         android:layout_width="370dp"
-        android:layout_height="85dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
@@ -104,7 +104,7 @@
     <TextView
         android:id="@+id/TVStep4"
         android:layout_width="370dp"
-        android:layout_height="93dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
