@@ -10,60 +10,70 @@
     tools:context=".RegisterActivity">
 
     <EditText
-        android:textColor="@color/black"
         android:id="@+id/email"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="75dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/button4"
         android:fontFamily="@font/poppins"
-        android:gravity="center"
         android:hint="Your Email"
         android:inputType="textEmailAddress"
         android:maxLines="1"
-        android:paddingTop="20dp"
-        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
     <EditText
-        android:textColor="@color/black"
         android:id="@+id/name"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/button4"
         android:fontFamily="@font/poppins"
-        android:gravity="center"
         android:hint="Your Name"
         android:inputType="textPersonName"
         android:maxLines="1"
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
     <EditText
-        android:textColor="@color/black"
         android:id="@+id/password"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/button4"
         android:fontFamily="@font/poppins"
-        android:gravity="center"
         android:hint="Password"
         android:inputType="textPassword"
         android:maxLines="1"
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
     <EditText
-        android:textColor="@color/black"
         android:id="@+id/dateOfBirth"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
+        android:background="@drawable/button4"
         android:fontFamily="@font/poppins"
-        android:gravity="center"
         android:hint="dd/mm/yyyy"
         android:maxLines="1"
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
     <RadioGroup
