@@ -1,8 +1,19 @@
 package com.example.eunoia;
 
 
+import android.os.Bundle;
 
-public class Help {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Help extends AppCompatActivity {
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_help);
+
+    }
 
 
 }
