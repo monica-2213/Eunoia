@@ -56,36 +56,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.234" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/ButtonCall6"
-        android:layout_width="90dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="CALL"
-        android:textColor="#602E9E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonCall6"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:background="@drawable/button3"
+            android:backgroundTint="#FFFFFF"
+            android:text="CALL"
+            android:textColor="#602E9E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.878"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534" />
 
-    <TextView
-        android:id="@+id/ContactName2"
-        android:layout_width="220dp"
-        android:layout_height="27dp"
-        android:fontFamily="@font/poppins"
-        android:text="Mom"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/ContactName3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.424"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        <TextView
+            android:id="@+id/ContactName2"
+            android:layout_width="220dp"
+            android:layout_height="27dp"
+            android:fontFamily="@font/poppins"
+            android:text="Mom"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/ContactName3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.788" />
 
-    <TextView
+        <TextView
         android:id="@+id/number2"
         android:layout_width="218dp"
         android:layout_height="23dp"
@@ -111,34 +112,35 @@
         app:layout_constraintTop_toBottomOf="@+id/ContactName3"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/ContactName3"
-        android:layout_width="219dp"
-        android:layout_height="27dp"
-        android:fontFamily="@font/poppins"
-        android:text="Grandpa"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.496" />
+        <TextView
+            android:id="@+id/ContactName3"
+            android:layout_width="219dp"
+            android:layout_height="27dp"
+            android:fontFamily="@font/poppins"
+            android:text="Grandpa"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.517" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/ButtonCall5"
-        android:layout_width="90dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="CALL"
-        android:textColor="#602E9E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonCall5"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:background="@drawable/button3"
+            android:backgroundTint="#FFFFFF"
+            android:text="CALL"
+            android:textColor="#602E9E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.38" />
 
     <TextView
         android:id="@+id/TVEmail"
@@ -156,19 +158,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.097" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/ButtonCall4"
-        android:layout_width="90dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#FFFFFF"
-        android:text="CALL"
-        android:textColor="#602E9E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.227" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ButtonCall4"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:background="@drawable/button3"
+            android:backgroundTint="#FFFFFF"
+            android:text="CALL"
+            android:textColor="#602E9E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.227" />
 
         <View
             android:id="@+id/divider"
