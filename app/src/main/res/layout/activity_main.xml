@@ -71,7 +71,7 @@
 
     <TextView
         android:id="@+id/btnForgot"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnLogin1"
         android:layout_centerHorizontal="true"
@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnForgot"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="28dp"
         android:gravity="center"
         android:hint="Don't have an account yet?"
         android:layout_centerHorizontal="true"

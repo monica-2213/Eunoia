@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:paddingStart="40dp"
+        android:paddingStart="30dp"
         android:paddingEnd="40dp"
         android:id="@+id/recycle"
         android:layout_width="410dp"
