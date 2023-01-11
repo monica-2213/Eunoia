@@ -27,6 +27,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class EmergencyActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
+    private String username;
     private DrawerLayout drawer;
     TextView textview, numview, textview2, numview2, textview3, numview3;
     Button btnManageEm;
@@ -44,6 +45,14 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency);
+
+        Bundle extras = getIntent().getExtras();
+
+        if(extras!=null){
+            username = extras.getString("username");
+        }else {
+            username = "decoy";
+        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -141,11 +150,13 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
 
             case R.id.nav_motivation:
                 Intent intentMot = new Intent(getApplicationContext(), MotivationActivity.class);
+                intentMot.putExtra("username",username);
                 startActivity(intentMot);
                 finish();
                 break;
             case R.id.nav_tracker:
                 Intent intentTrack = new Intent(getApplicationContext(), TrackerActivity.class);
+                intentTrack.putExtra("username",username);
                 startActivity(intentTrack);
                 finish();
                 break;
@@ -155,7 +166,10 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
                 break;
 
             case R.id.nav_recommendation:
-
+                Intent intentRecommend = new Intent(getApplicationContext(), RecomendationActivity.class);
+                intentRecommend.putExtra("username",username);
+                startActivity(intentRecommend);
+                finish();
                 break;
 
             case R.id.nav_emergency:

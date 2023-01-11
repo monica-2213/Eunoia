@@ -81,7 +81,10 @@ public class RecomendationActivity extends AppCompatActivity implements Navigati
                 break;
 
             case R.id.nav_emergency:
-
+                Intent intentEmergency = new Intent(getApplicationContext(), EmergencyActivity.class);
+                intentEmergency.putExtra("username",username);
+                startActivity(intentEmergency);
+                finish();
                 break;
         }
 

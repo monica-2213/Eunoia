@@ -81,7 +81,10 @@ public class TrackerActivity extends AppCompatActivity implements NavigationView
                 break;
 
             case R.id.nav_emergency:
-
+                Intent intentEmergency = new Intent(getApplicationContext(), EmergencyActivity.class);
+                intentEmergency.putExtra("username",username);
+                startActivity(intentEmergency);
+                finish();
                 break;
         }
 

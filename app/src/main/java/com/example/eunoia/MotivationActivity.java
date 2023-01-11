@@ -85,7 +85,10 @@ public class MotivationActivity extends AppCompatActivity implements NavigationV
                 break;
 
             case R.id.nav_emergency:
-
+                Intent intentEmergency = new Intent(getApplicationContext(), EmergencyActivity.class);
+                intentEmergency.putExtra("username",username);
+                startActivity(intentEmergency);
+                finish();
                 break;
         }
 
