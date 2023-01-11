@@ -73,7 +73,10 @@ public class RecomendationActivity extends AppCompatActivity implements Navigati
                 break;
 
             case R.id.nav_help:
-
+                Intent intentHelp = new Intent(getApplicationContext(), Help.class);
+                intentHelp.putExtra("username",username);
+                startActivity(intentHelp);
+                finish();
                 break;
 
             case R.id.nav_recommendation:
