@@ -9,27 +9,16 @@
     tools:context=".HelplineActivity">
 
     <TextView
-        android:id="@+id/Number3"
-        android:layout_width="218dp"
-        android:layout_height="23dp"
-        android:text="0189007247"
-        android:textColor="#918D8D"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVThriveWell" />
-
-    <TextView
         android:id="@+id/Number2"
         android:layout_width="218dp"
         android:layout_height="23dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
         android:text="0379568145"
         android:textColor="#918D8D"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TVBefrienders1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TVBefrienders1"
         app:layout_constraintTop_toBottomOf="@+id/TVBefrienders1"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -43,10 +32,23 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/Number3"
+        android:layout_width="218dp"
+        android:layout_height="23dp"
+        android:text="0189007247"
+        android:textColor="#918D8D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TVThriveWell"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TVThriveWell"
+        app:layout_constraintTop_toBottomOf="@+id/TVThriveWell"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/TVBefrienders1"
@@ -86,17 +88,17 @@
         android:text="019261599"
         android:textColor="#918D8D"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintEnd_toEndOf="@+id/TVTalianKasih1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TVTalianKasih1"
+        app:layout_constraintTop_toBottomOf="@+id/TVTalianKasih1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/ButtonCall6"
         android:layout_width="90dp"
         android:layout_height="70dp"
-        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/button3"
         android:text="CALL"
         android:textColor="#602E9E"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -104,13 +106,13 @@
         app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446" />
+        app:layout_constraintVertical_bias="0.458" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/ButtonCall5"
         android:layout_width="90dp"
         android:layout_height="70dp"
-        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/button3"
         android:text="CALL"
         android:textColor="#602E9E"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -154,7 +156,7 @@
         android:id="@+id/ButtonCall4"
         android:layout_width="90dp"
         android:layout_height="70dp"
-        android:backgroundTint="#FFFFFF"
+        android:background="@drawable/button3"
         android:text="CALL"
         android:textColor="#602E9E"
         app:layout_constraintBottom_toBottomOf="parent"
