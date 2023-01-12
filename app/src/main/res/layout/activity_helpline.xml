@@ -35,6 +35,7 @@
         app:layout_constraintVertical_bias="0.322" />
 
     <TextView
+        android:textColor="@color/black"
         android:id="@+id/TVHelpline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -155,6 +156,7 @@
         app:layout_constraintTop_toBottomOf="@+id/CallThriveWell" />
 
     <TextView
+        android:textColor="@color/black"
         android:id="@+id/EmailforHelpline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
