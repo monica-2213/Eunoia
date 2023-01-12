@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         password1 = findViewById(R.id.password1);
         btnLogin1 = findViewById(R.id.btnLogin1);
         btnSignUp1 = findViewById(R.id.btnSignup1);
+        btnForgot = findViewById(R.id.btnForgot);
         dbHelper = new DBHelper(this);
 
         btnLogin1.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                                           }
                                       }
         );
-        
+
         btnForgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

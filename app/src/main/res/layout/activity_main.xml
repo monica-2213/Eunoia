@@ -69,15 +69,17 @@
         android:textColor="@color/white"
         android:textSize="16sp" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnForgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnLogin1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins"
+        android:fontFamily="@font/raleway_semibold"
         android:text="Forgot Password?"
+        android:background="@android:color/transparent"
+        android:textColor="#5C5656"
         android:textAlignment="textEnd" />
 
     <TextView

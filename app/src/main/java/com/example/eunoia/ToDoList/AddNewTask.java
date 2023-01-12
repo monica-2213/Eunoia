@@ -74,33 +74,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
             mEditText1.setText(taskName);
             mEditText2.setText(taskDesc);
 
-            if(taskName.length()>0||taskDesc.length()>0){
-                mSaveButton.setEnabled(false);
-            }
         }
-        mEditText1.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if(charSequence.equals("")){
-                    mSaveButton.setEnabled(false);
-                    mSaveButton.setBackgroundColor(Color.GRAY);
-                }else{
-                    mSaveButton.setEnabled(true);
-                    mSaveButton.setBackgroundColor(Color.GREEN);
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
-
         boolean finalIsUpdate = isUpdate;
         mSaveButton.setOnClickListener(new View.OnClickListener() {
             @Override
