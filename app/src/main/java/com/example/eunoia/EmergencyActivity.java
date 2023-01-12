@@ -96,6 +96,12 @@ public class EmergencyActivity extends AppCompatActivity implements NavigationVi
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(EmergencyActivity.this, ManageEmergencyContactsActivity.class);
+                intent.putExtra("Name1",Name1);
+                intent.putExtra("Num1",Num1);
+                intent.putExtra("Name2",Name2);
+                intent.putExtra("Num2",Num2);
+                intent.putExtra("Name3",Name3);
+                intent.putExtra("Num3",Num3);
                 startActivity(intent);
                 finish();
             }

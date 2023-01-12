@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,12 +22,27 @@ public class ManageEmergencyContactsActivity extends AppCompatActivity {
     private static final String CONTACT_NUMBER2= "EmergencyNumber2";
     private static final String CONTACT_NAME3= "EmergencyName3";
     private static final String CONTACT_NUMBER3= "EmergencyNumber3";
+    String Name1,Name2,Name3,Num1,Num2,Num3;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_emergency_contact);
+
+
+
+        Bundle extras = getIntent().getExtras();
+
+        if(extras!=null){
+            Name1 = extras.getString("Name1");
+            Num1 = extras.getString("Num1");
+            Name2 = extras.getString("Name2");
+            Num2 = extras.getString("Num2");
+            Name3 = extras.getString("Name3");
+            Num3 = extras.getString("Num3");
+        }else {
+        }
 
 
         editName1 = findViewById(R.id.emergencyContactName);
@@ -52,12 +68,29 @@ public class ManageEmergencyContactsActivity extends AppCompatActivity {
 
 
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString(CONTACT_NAME,editName1.getText().toString());
-                editor.putString(CONTACT_NUMBER,editNum1.getText().toString());
-                editor.putString(CONTACT_NAME2,editName2.getText().toString());
-                editor.putString(CONTACT_NUMBER2,editNum2.getText().toString());
-                editor.putString(CONTACT_NAME3,editName3.getText().toString());
-                editor.putString(CONTACT_NUMBER3,editNum3.getText().toString());
+
+                if(EmName1.isEmpty()){
+                    editor.putString(CONTACT_NAME,Name1);
+                    editor.putString(CONTACT_NUMBER,Num1);
+                }else {
+                    editor.putString(CONTACT_NAME, editName1.getText().toString());
+                    editor.putString(CONTACT_NUMBER, editNum1.getText().toString());
+                }
+
+                if(EmName2.isEmpty()){
+                    editor.putString(CONTACT_NAME2,Name2);
+                    editor.putString(CONTACT_NUMBER2,Num2);
+                }else {
+                    editor.putString(CONTACT_NAME2, editName2.getText().toString());
+                    editor.putString(CONTACT_NUMBER2, editNum2.getText().toString());
+                }
+                if(EmName3.isEmpty()){
+                    editor.putString(CONTACT_NAME3,Name3);
+                    editor.putString(CONTACT_NUMBER3,Num3);
+                }else {
+                    editor.putString(CONTACT_NAME3, editName3.getText().toString());
+                    editor.putString(CONTACT_NUMBER3, editNum3.getText().toString());
+                }
                 editor.commit();
                 Intent intent1 = new Intent(ManageEmergencyContactsActivity.this,EmergencyActivity.class);
                 startActivity(intent1);
