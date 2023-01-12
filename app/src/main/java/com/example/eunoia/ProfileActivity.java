@@ -9,6 +9,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -23,7 +25,8 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
     EditText email, name, password, dateOfBirth, gender;
     String username;
     DBHelper dbHelper;
-
+    Button show;
+    int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,8 +64,23 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
         email.setText(res.getString(1));
         name.setText(res.getString(2));
         password.setText(res.getString(3));
+        password.setTransformationMethod(PasswordTransformationMethod.getInstance());
         dateOfBirth.setText(res.getString(4));
         gender.setText(res.getString(5));
+
+        show = findViewById(R.id.show);
+        show.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(count==0) {
+                    password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    count++;
+                }else{
+                    password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    count=0;
+                }
+            }
+        });
 
     }
 
