@@ -122,7 +122,7 @@ public class NewHabit extends Fragment {
                 }
                 else {
                     Boolean insert = tdb.insertData(username, hours, breakfast, lunch, dinner, currentDate);
-                    Toast.makeText(getActivity(), "Mood Saved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Habit Saved", Toast.LENGTH_SHORT).show();
                 }
             }
         });

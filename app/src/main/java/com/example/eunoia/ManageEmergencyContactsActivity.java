@@ -46,11 +46,23 @@ public class ManageEmergencyContactsActivity extends AppCompatActivity {
 
 
         editName1 = findViewById(R.id.emergencyContactName);
+        editName1.setText(Name1);
+
         editNum1 = findViewById(R.id.emergencyContactNumber);
+        editNum1.setText(Num1);
+
         editName2 = findViewById(R.id.emergencyContactName2);
+        editName2.setText(Name2);
+
         editNum2 = findViewById(R.id.emergencyContactNumber2);
+        editNum2.setText(Num2);
+
         editName3 = findViewById(R.id.emergencyContactName3);
+        editName3.setText(Name3);
+
         editNum3 = findViewById(R.id.emergencyContactNumber3);
+        editNum3.setText(Num3);
+
         Update = findViewById(R.id.BTNUpdate);
         Back = findViewById(R.id.ToDisplay);
 
