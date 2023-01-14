@@ -2,76 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trackerMenu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TrackerMenu"
-    android:id="@+id/trackerMenu"
-    android:background="@drawable/img_1">
-
-    <ImageButton
-        android:id="@+id/mood"
-        android:layout_width="181dp"
-        android:layout_height="181dp"
-        android:background="@drawable/custome_border_ripple"
-        android:scaleType="centerInside"
-        android:src="@drawable/mood"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/MoodTV"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/MoodTV"
-        app:layout_constraintTop_toBottomOf="@+id/MoodTV"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/habit"
-        android:layout_width="181dp"
-        android:layout_height="181dp"
-        android:background="@drawable/custome_border_ripple"
-        android:scaleType="centerInside"
-        android:src="@drawable/habit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/HabitTV"
-        app:layout_constraintStart_toStartOf="@+id/HabitTV"
-        app:layout_constraintTop_toBottomOf="@+id/HabitTV"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/MoodTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="179dp"
-        android:layout_marginEnd="174dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="MOODS"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164" />
-
-    <TextView
-        android:id="@+id/HabitTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="179dp"
-        android:layout_marginEnd="174dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="HABITS"
-        android:textColor="@color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+    android:background="@drawable/img_1"
+    tools:context=".TrackerMenu">
 
     <TextView
         android:id="@+id/username"
@@ -87,6 +22,68 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/mood"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#A5A6F6"
+        android:fontFamily="@font/poppins_semibold"
+        android:foregroundTint="#A13838"
+        android:text="MOODS"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:iconTint="#DD9DE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:rippleColor="#E8AAF3" />
+
+
+    <Button
+        android:id="@+id/habit"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#A5A6F6"
+        android:fontFamily="@font/poppins_semibold"
+        android:foregroundTint="#A13838"
+        android:text="HABITS"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:iconTint="#DD9DE8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:rippleColor="#E8AAF3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/mood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="140dp"
+        android:src="@drawable/habit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
