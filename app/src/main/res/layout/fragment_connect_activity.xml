@@ -5,8 +5,8 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_1"
     tools:context=".ConnectActivity">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"

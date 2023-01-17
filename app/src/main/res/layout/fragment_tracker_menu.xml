@@ -5,7 +5,7 @@
     android:id="@+id/trackerMenu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_1"
+    android:background="@drawable/backgroundofficial"
     tools:context=".TrackerMenu">
 
     <TextView
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:backgroundTint="#A5A6F6"
+        android:backgroundTint="@color/soft_purple"
         android:fontFamily="@font/poppins_semibold"
         android:foregroundTint="#A13838"
         android:text="MOODS"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:backgroundTint="#A5A6F6"
+        android:backgroundTint="@color/soft_purple"
         android:fontFamily="@font/poppins_semibold"
         android:foregroundTint="#A13838"
         android:text="HABITS"

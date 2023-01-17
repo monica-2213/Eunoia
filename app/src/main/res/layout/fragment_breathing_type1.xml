@@ -8,13 +8,14 @@
     android:layout_height="wrap_content"
     tools:layout_editor_absoluteX="1dp"
     tools:layout_editor_absoluteY="1dp"
+    android:layout_marginBottom="20dp"
     android:fillViewport="true">
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".BreathingType1"
-    android:background="@drawable/img_1">
+    >
 
     <TextView
         android:id="@+id/TVBreathe1"
@@ -174,6 +175,7 @@
         android:layout_width="372dp"
         android:layout_height="53dp"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"

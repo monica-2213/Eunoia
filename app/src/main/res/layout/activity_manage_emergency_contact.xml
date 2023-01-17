@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Name #3"
-            android:textColor="#000000"
+            android:textColor="@color/purple_700"
             android:textSize="18sp" />
 
         <EditText
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Number #3"
-            android:textColor="#000000"
+            android:textColor="@color/purple_700"
             android:textSize="18sp" />
 
         <EditText
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Name #2"
-            android:textColor="#000000"
+            android:textColor="@color/purple_700"
             android:textSize="18sp" />
 
         <EditText
@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Number #2"
-            android:textColor="#000000"
+            android:textColor="@color/purple_700"
             android:textSize="18sp" />
 
         <EditText
@@ -118,7 +118,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Name #1"
-            android:textColor="#000000"
+            android:textColor="@color/purple_700"
             android:textSize="18sp" />
 
         <EditText
@@ -138,7 +138,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="Emergency Contact Number #1"
-            android:textColor="#000000"
+            android:textColor="@color/purple_700"
             android:textSize="18sp" />
 
         <EditText
@@ -188,9 +188,10 @@
         android:layout_width="148dp"
         android:layout_height="50dp"
         android:background="@drawable/button1"
+        android:backgroundTint="@color/white"
         android:fontFamily="@font/raleway_semibold"
         android:text="Back"
-        android:textColor="@color/white"
+        android:textColor="@color/soft_purple"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.155"

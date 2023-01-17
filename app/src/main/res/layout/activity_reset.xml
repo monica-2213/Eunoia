@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResetActivity"
-    android:background="@drawable/img_1"
+    android:background="@drawable/backgroundofficial"
     android:padding="10dp">
 
     <ImageView
