@@ -18,7 +18,7 @@
         android:fontFamily="@font/bad_script"
         android:textStyle="bold"
         android:text="EUNOIA"
-        android:textColor="#9C9999"
+        android:textColor="@color/black"
         android:textSize="36sp" />
 
     <EditText

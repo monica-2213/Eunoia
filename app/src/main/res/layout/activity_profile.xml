@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ProfileActivity"
-    android:background="@drawable/img_1"
     android:fitsSystemWindows="true"
     tools:openDrawer=""
     android:id="@+id/drawerLayout">
@@ -125,12 +124,14 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/dateOfBirth" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/show"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/button1"
                 android:text="Show password"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
