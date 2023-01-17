@@ -136,7 +136,7 @@
         android:id="@+id/IVYoga1Pose1"
         android:layout_width="415dp"
         android:layout_height="199dp"
-        android:src="@drawable/img"
+        android:src="@drawable/img0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -149,7 +149,7 @@
         android:layout_height="199dp"
         android:layout_below="@+id/TVStep2"
         android:layout_marginTop="25dp"
-        android:src="@drawable/img_1"
+        android:src="@drawable/img_2"
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="376dp" />
 
@@ -159,7 +159,7 @@
         android:layout_height="199dp"
         android:layout_below="@+id/TVStep1"
         android:layout_marginTop="25dp"
-        android:src="@drawable/img_2"
+        android:src="@drawable/img_1"
         tools:layout_editor_absoluteX="165dp"
         tools:layout_editor_absoluteY="266dp" />
 
