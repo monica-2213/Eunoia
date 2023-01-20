@@ -21,7 +21,7 @@
 
     <LinearLayout
         android:layout_below="@+id/textView2"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:id="@+id/LLChoices"
         android:layout_width="414dp"
         android:layout_height="147dp"
@@ -62,7 +62,7 @@
 
     <TextView
         android:layout_below="@+id/TVTitle"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
