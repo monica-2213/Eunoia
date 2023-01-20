@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundofficial"
     tools:context=".BreathingType2" >
 
     <TextView
@@ -44,7 +43,6 @@
         android:id="@+id/TVStep1"
         android:layout_width="374dp"
         android:layout_height="55dp"
-        android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text="1. Let your lips part. Make a whooshing sound, exhaling completely through your mouth."
@@ -60,7 +58,6 @@
         android:id="@+id/TVStep2"
         android:layout_width="374dp"
         android:layout_height="55dp"
-        android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
         android:padding="5dp"
@@ -77,7 +74,6 @@
         android:id="@+id/TVStep3"
         android:layout_width="374dp"
         android:layout_height="55dp"
-        android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text="3. Then, for seven seconds hold your breath."
@@ -93,7 +89,6 @@
         android:id="@+id/TVStep4"
         android:layout_width="374dp"
         android:layout_height="55dp"
-        android:background="@drawable/textview"
         android:fontFamily="@font/poppins"
         android:gravity="center"
         android:padding="5dp"

@@ -5,6 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="8dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
     android:background="@drawable/backgroundofficial"
     app:cardCornerRadius="8dp"
     app:cardElevation="5dp">

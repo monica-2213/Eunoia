@@ -12,7 +12,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/backgroundofficial"
         tools:context=".MainActivity">
 
 
@@ -54,7 +53,6 @@
             android:layout_width="359dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="44dp"
-            android:background="@drawable/textview"
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:padding="5dp"
@@ -71,7 +69,6 @@
             android:layout_width="359dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:background="@drawable/textview"
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:padding="5dp"
@@ -88,7 +85,6 @@
             android:layout_width="359dp"
             android:layout_height="55dp"
             android:layout_marginTop="24dp"
-            android:background="@drawable/textview"
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text=" 3. Hold your breath for a count of four."
@@ -104,7 +100,6 @@
             android:layout_width="359dp"
             android:layout_height="55dp"
             android:layout_marginTop="24dp"
-            android:background="@drawable/textview"
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="4. Exhale for another count of four."
@@ -121,7 +116,6 @@
             android:layout_height="55dp"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="40dp"
-            android:background="@drawable/textview"
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="  5. Hold your breath again for a count of four."
@@ -136,7 +130,6 @@
             android:id="@+id/TVStep6"
             android:layout_width="359dp"
             android:layout_height="55dp"
-            android:background="@drawable/textview"
             android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="6. Repeat for three to four rounds."
