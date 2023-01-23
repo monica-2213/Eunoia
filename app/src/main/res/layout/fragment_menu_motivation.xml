@@ -1,85 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuMotivation"
-    android:background="@drawable/backgroundofficial">
+    tools:context=".MenuMotivation">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="133dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/motivation" />
+
+        <Button
+            android:id="@+id/motivation"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#A5A6F6"
+            android:fontFamily="@font/poppins_semibold"
+            android:foregroundTint="#A13838"
+            android:text="MOTIVATION"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:iconTint="#DD9DE8"
+            app:rippleColor="#E8AAF3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="133dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/to_do" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/toDoList"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#A5A6F6"
+            android:fontFamily="@font/poppins_semibold"
+            android:foregroundTint="#A13838"
+            android:text="to Do List"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:iconTint="#DD9DE8"
+            app:rippleColor="#E8AAF3" />
+    </LinearLayout>
 
     <TextView
+        android:layout_centerHorizontal="true"
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="MOTIVATION"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/motivation"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#A5A6F6"
-        android:fontFamily="@font/poppins_semibold"
-        android:foregroundTint="#A13838"
-        android:text="MOTIVATION"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:iconTint="#DD9DE8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:rippleColor="#E8AAF3" />
-
-    <Button
-        android:id="@+id/toDoList"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#A5A6F6"
-        android:fontFamily="@font/poppins_semibold"
-        android:foregroundTint="#A13838"
-        android:text="to Do List"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:iconTint="#DD9DE8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:rippleColor="#E8AAF3" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="133dp"
-        android:layout_height="134dp"
-        android:layout_marginTop="140dp"
-        android:src="@drawable/motivation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="133dp"
-        android:layout_height="134dp"
-        android:layout_marginBottom="140dp"
-        android:src="@drawable/to_do"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -30,6 +30,8 @@
 
 
             <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,9 +39,10 @@
                 android:drawableLeft="@drawable/person"
                 android:editable="false"
                 android:fontFamily="@font/work_sans_medium"
-                android:hint="     Name"
+                android:hint="Name"
                 android:minHeight="48dp"
-                android:paddingLeft="40dp"
+                android:drawablePadding="20dp"
+                android:paddingLeft="10dp"
                 android:paddingBottom="30dp"
                 android:textColor="#9C9999"
                 android:textSize="20sp"
@@ -49,6 +52,8 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,9 +61,10 @@
                 android:drawableLeft="@drawable/email"
                 android:editable="false"
                 android:fontFamily="@font/work_sans_medium"
-                android:hint="     Email"
+                android:hint="Email"
                 android:minHeight="48dp"
-                android:paddingLeft="40dp"
+                android:drawablePadding="20dp"
+                android:paddingLeft="10dp"
                 android:paddingBottom="30dp"
                 android:textColor="#9C9999"
                 android:textSize="20sp"
@@ -68,6 +74,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/name" />
 
             <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,9 +83,10 @@
                 android:drawableLeft="@drawable/key"
                 android:editable="false"
                 android:fontFamily="@font/work_sans_medium"
-                android:hint="     Password"
+                android:hint="Password"
                 android:minHeight="48dp"
-                android:paddingLeft="40dp"
+                android:drawablePadding="20dp"
+                android:paddingLeft="10dp"
                 android:paddingBottom="30dp"
                 android:textColor="#9C9999"
                 android:textSize="20sp"
@@ -87,6 +96,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/email" />
 
             <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:id="@+id/dateOfBirth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -94,9 +105,10 @@
                 android:drawableLeft="@drawable/calendar"
                 android:editable="false"
                 android:fontFamily="@font/work_sans_medium"
-                android:hint="     Date of Birth"
+                android:hint="Date of Birth"
                 android:minHeight="48dp"
-                android:paddingLeft="40dp"
+                android:drawablePadding="20dp"
+                android:paddingLeft="10dp"
                 android:paddingBottom="30dp"
                 android:textColor="#9C9999"
                 android:textSize="20sp"
@@ -106,6 +118,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/password" />
 
             <EditText
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:id="@+id/gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -113,9 +127,10 @@
                 android:drawableLeft="@drawable/face"
                 android:editable="false"
                 android:fontFamily="@font/work_sans_medium"
-                android:hint="     Gender"
+                android:hint="Gender"
                 android:minHeight="48dp"
-                android:paddingLeft="40dp"
+                android:drawablePadding="20dp"
+                android:paddingLeft="10dp"
                 android:paddingBottom="30dp"
                 android:textColor="#9C9999"
                 android:textSize="20sp"

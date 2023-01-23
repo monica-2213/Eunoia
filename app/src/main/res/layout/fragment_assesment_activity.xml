@@ -77,7 +77,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_below="@+id/LLChoices"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/SubmitBtn"
         android:layout_width="110dp"
