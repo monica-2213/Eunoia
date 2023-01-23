@@ -109,4 +109,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852" />
 
+    <Button
+        android:id="@+id/BtnToHelpLine"
+        android:layout_width="126dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/SubmitBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="81dp"
+        android:shadowRadius="10"
+        android:text="HELPLINE" />
+
 </RelativeLayout>

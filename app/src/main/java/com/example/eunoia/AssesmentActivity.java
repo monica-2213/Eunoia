@@ -1,6 +1,7 @@
 package com.example.eunoia;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -20,7 +21,7 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
     TextView totalQuestionsTextView;
     TextView questionTextView;
     Button ans1,ans2,ans3,ans4;
-    Button submitBtn;
+    Button submitBtn,Helpine;
 
     int score=0;
     int totalQuestion = QuestionsAnswer.question.length;
@@ -40,6 +41,16 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
         ans2 = findViewById(R.id.BtnAns2);
         ans3 = findViewById(R.id.BtnAns3);
         submitBtn = findViewById(R.id.SubmitBtn);
+        Helpine = findViewById(R.id.BtnToHelpLine);
+        Helpine.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AssesmentActivity.this,HelplineActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
         ans1.setOnClickListener(this);
         ans2.setOnClickListener(this);
@@ -49,6 +60,7 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
         totalQuestionsTextView.setText("Total questions:" + totalQuestion);
 
         loadNewQuestion();
+
     }
 
     public void onClick(View view) {
