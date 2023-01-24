@@ -19,84 +19,81 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:elevation="4dp"
-            >
-        </androidx.appcompat.widget.Toolbar>
+            android:elevation="4dp"></androidx.appcompat.widget.Toolbar>
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20sp"
-        android:padding="40dp"
-        android:rowCount="5"
-        android:columnCount="1">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20sp"
+            android:columnCount="1"
+            android:padding="40dp"
+            android:rowCount="5">
 
-        <Button
-            android:drawableLeft="@drawable/fist"
-            android:drawableRight="@drawable/fist"
-            android:id="@+id/btnMotivation"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Motivation" />
+            <Button
+                android:id="@+id/btnMotivation"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5sp"
+                android:drawableLeft="@drawable/fist"
+                android:drawableRight="@drawable/fist"
+                android:text="Motivation"
+                android:textSize="16sp" />
 
-        <Button
-            android:drawableLeft="@drawable/track"
-            android:drawableRight="@drawable/track"
-            android:id="@+id/btnTracker"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Tracker" />
+            <Button
+                android:id="@+id/btnTracker"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5sp"
+                android:drawableLeft="@drawable/track"
+                android:drawableRight="@drawable/track"
+                android:text="Tracker"
+                android:textSize="16sp" />
 
-        <Button
-            android:drawableLeft="@drawable/recicon"
-            android:drawableRight="@drawable/recicon"
-            android:id="@+id/btnRecommendation"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="14sp"
-            android:layout_margin="5sp"
-            android:text="Recommendation" />
+            <Button
+                android:id="@+id/btnRecommendation"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5sp"
+                android:drawableLeft="@drawable/recicon"
+                android:drawableRight="@drawable/recicon"
+                android:text="Recommendation"
+                android:textSize="14sp" />
 
-        <Button
-            android:drawableLeft="@drawable/information"
-            android:drawableRight="@drawable/information"
-            android:id="@+id/btnHelp"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Help" />
+            <Button
+                android:id="@+id/btnHelp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5sp"
+                android:drawableLeft="@drawable/information"
+                android:drawableRight="@drawable/information"
+                android:text="Help"
+                android:textSize="16sp" />
 
-        <Button
-            android:drawableLeft="@drawable/emergency1"
-            android:drawableRight="@drawable/emergency1"
-            android:id="@+id/btnEmergency"
-            android:layout_gravity="fill"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:textSize="16sp"
-            android:layout_margin="5sp"
-            android:text="Emergency" />
+            <Button
+                android:id="@+id/btnEmergency"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5sp"
+                android:drawableLeft="@drawable/emergency1"
+                android:drawableRight="@drawable/emergency1"
+                android:text="Emergency"
+                android:textSize="16sp" />
 
-    </GridLayout>
+        </GridLayout>
 
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:id="@+id/nav_view"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/drawer_home"
-        />
+        app:menu="@menu/drawer_home" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

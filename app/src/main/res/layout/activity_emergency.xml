@@ -189,6 +189,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button1"
+                android:fontFamily="@font/raleway_semibold"
                 android:text="Manage Emergency Contacts"
                 android:textColor="@color/white" />
 
@@ -196,9 +197,10 @@
                 android:id="@+id/button911"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_below="@+id/ButtonManageEmContacts"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/raleway_semibold"
                 android:text="CALL 999" />
 
         </RelativeLayout>
