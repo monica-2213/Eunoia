@@ -49,7 +49,7 @@
                         android:id="@+id/btnMotivation"
                         android:layout_width="150dp"
                         android:layout_height="100dp"
-                        android:layout_marginEnd="30dp"
+                        android:layout_marginEnd="20dp"
                         android:backgroundTint="#9C89FF"
                         android:drawableTop="@drawable/fist"
                         android:paddingTop="10dp"
@@ -84,7 +84,7 @@
                     android:layout_height="200dp"
                     android:layout_below="@id/TVTitleRec"
                     android:layout_centerHorizontal="true"
-                    tools:src="@drawable/subnew" />
+                    android:src="@drawable/subnew" />
 
 
                 <TextView
@@ -117,7 +117,7 @@
                         android:id="@+id/btnRecommendation"
                         android:layout_width="150dp"
                         android:layout_height="100dp"
-                        android:layout_marginEnd="30dp"
+                        android:layout_marginEnd="20dp"
                         android:backgroundTint="#9C89FF"
                         android:drawableTop="@drawable/recicon"
                         android:paddingTop="10dp"
@@ -148,7 +148,7 @@
                         android:id="@+id/btnEmergency"
                         android:layout_width="150dp"
                         android:layout_height="100dp"
-                        android:layout_marginEnd="30dp"
+                        android:layout_marginEnd="20dp"
                         android:backgroundTint="#9C89FF"
                         android:drawableTop="@drawable/emergency1"
                         android:paddingTop="10dp"

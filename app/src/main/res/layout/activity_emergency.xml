@@ -37,7 +37,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="30dp"
-                android:backgroundTint="#F1DEFD"
+                android:backgroundTint="#FFE5F1"
                 app:cardCornerRadius="10dp">
 
                 <TextView
@@ -83,7 +83,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="30dp"
-                android:backgroundTint="#F1DEFD"
+                android:backgroundTint="#FFE5F1"
                 app:cardCornerRadius="10dp">
 
 
@@ -131,7 +131,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="30dp"
-                android:backgroundTint="#F1DEFD"
+                android:backgroundTint="#FFE5F1"
                 app:cardCornerRadius="10dp">
 
                 <TextView
