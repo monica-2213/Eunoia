@@ -63,7 +63,7 @@
         android:layout_marginTop="10dp"
         android:layout_below="@id/TVMusic"
         android:layout_centerHorizontal="true"
-        tools:src="@drawable/musicbg" />
+        android:src="@drawable/musicbg" />
 
     <TextView
         android:id="@+id/TVYoga"
@@ -115,7 +115,7 @@
         android:layout_marginTop="10dp"
         android:layout_below="@id/TVYoga"
         android:layout_centerHorizontal="true"
-        tools:src="@drawable/yogabg" />
+        android:src="@drawable/yogabg" />
 
     <TextView
         android:id="@+id/TVBreath"
@@ -140,7 +140,7 @@
         android:layout_marginBottom="20dp"
         android:layout_below="@id/TVBreath"
         android:layout_centerHorizontal="true"
-        tools:src="@drawable/breathbg" />
+        android:src="@drawable/breathbg" />
 
 </RelativeLayout>
 
