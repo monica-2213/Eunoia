@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -78,7 +79,7 @@ public class TrackerMenu extends Fragment {
         TextView tv = view.findViewById(R.id.username);
         tv.setText("Hello "+username);
 
-        ImageButton mood = view.findViewById(R.id.mood);
+        Button mood = view.findViewById(R.id.mood);
         View.OnClickListener OCLmood =new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,7 +93,7 @@ public class TrackerMenu extends Fragment {
         };
         mood.setOnClickListener(OCLmood);
 
-        ImageButton habit = view.findViewById(R.id.habit);
+        Button habit = view.findViewById(R.id.habit);
         View.OnClickListener OCLhabit =new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -11,6 +11,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -76,7 +77,7 @@ public class MenuMotivation extends Fragment {
         TextView tv = view.findViewById(R.id.title);
         tv.setText("Hello "+username);
 
-        ImageButton motivate = view.findViewById(R.id.motivation);
+        Button motivate = view.findViewById(R.id.motivation);
         View.OnClickListener OCLmotivate =new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,7 +88,7 @@ public class MenuMotivation extends Fragment {
         };
         motivate.setOnClickListener(OCLmotivate);
 
-        ImageButton toDoList = view.findViewById(R.id.toDoList);
+        Button toDoList = view.findViewById(R.id.toDoList);
         View.OnClickListener OCLToDO =new View.OnClickListener() {
             @Override
             public void onClick(View view) {
