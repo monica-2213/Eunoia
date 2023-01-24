@@ -76,9 +76,8 @@
         android:fontFamily="@font/poppins_semibold"
         android:paddingStart="4dp"
         android:paddingTop="5dp"
-        android:text="Yoga"
+        android:text="YOGA"
         android:textSize="16sp"
-        tools:text="YOGA"
         android:textColor="@color/soft_purple"/>
 
     <Button
@@ -129,9 +128,8 @@
         android:fontFamily="@font/poppins_semibold"
         android:paddingStart="4dp"
         android:paddingTop="5dp"
-        android:text="BREATH"
+        android:text="BREATHING"
         android:textSize="16sp"
-        tools:text="BREATH"
         android:textColor="@color/soft_purple"/>
 
     <ImageView
