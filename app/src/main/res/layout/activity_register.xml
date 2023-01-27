@@ -65,8 +65,27 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/dateOfBirth"
+        android:id="@+id/repassword"
         android:layout_below="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button4"
+        android:fontFamily="@font/poppins"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/dateOfBirth"
+        android:layout_below="@id/repassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
