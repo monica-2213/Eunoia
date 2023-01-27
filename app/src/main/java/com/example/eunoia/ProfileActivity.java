@@ -25,7 +25,7 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
     EditText email, name, password, dateOfBirth, gender;
     String username;
     DBHelper dbHelper;
-    Button show;
+    Button show, editPassword;
     int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +50,7 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
         password = findViewById(R.id.password);
         dateOfBirth = findViewById(R.id.dateOfBirth);
         gender = findViewById(R.id.gender);
+        editPassword = findViewById(R.id.editPassword);
 
         Bundle extras = getIntent().getExtras();
         if(extras!=null){
@@ -79,6 +80,14 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
                     password.setTransformationMethod(PasswordTransformationMethod.getInstance());
                     count=0;
                 }
+            }
+        });
+        
+        editPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
+                startActivity(intent);
             }
         });
 
