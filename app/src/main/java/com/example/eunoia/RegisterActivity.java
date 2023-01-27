@@ -1,4 +1,4 @@
-package com.example.eunoiaupdate;
+package com.example.eunoia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
