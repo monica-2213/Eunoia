@@ -74,7 +74,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/button4"
         android:fontFamily="@font/poppins"
-        android:hint="Password"
+        android:hint="Retype Password"
         android:inputType="textPassword"
         android:maxLines="1"
         android:paddingStart="20dp"
